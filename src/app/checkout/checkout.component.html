@@ -1,0 +1,135 @@
+<section class="wishlist"> 
+    <div class="container">
+<div class="row">
+
+
+<div class="col-md-8">
+<h4 class="checkout-heading">Checkout - Purchase Information</h4>
+<div class="check-box-shadow">
+    <h4 class="recipient">Recipient Details</h4>
+    <div class="row ">
+                      
+        <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Flat No. with street</mat-label>
+            <input matInput #input type="email" placeholder="Enter flat no" required>
+          </mat-form-field>
+          <mat-form-field  class="form-group col-md-6"  floatLabel="always">
+            <mat-label>Locality</mat-label>
+            <mat-select matInput #input required placeholder="Enter Locality">
+              <mat-option value="one">Locality</mat-option>
+              <mat-option value="two">Locality</mat-option>
+            </mat-select>
+            </mat-form-field>
+
+
+
+<mat-form-field  class="form-group col-md-6" floatLabel="always">
+<mat-label> City</mat-label>
+<mat-select  matInput #input required placeholder="Enter city">
+  <mat-option value="one">City</mat-option>
+  <mat-option value="two">city2</mat-option>
+</mat-select>
+</mat-form-field>
+<mat-form-field  class="form-group col-md-6"  floatLabel="always">
+<mat-label>Select State</mat-label>
+<mat-select  matInput #input required placeholder="Enter or select state">
+  <mat-option value="one">City</mat-option>
+  <mat-option value="two">city2</mat-option>
+</mat-select>
+</mat-form-field>
+<mat-form-field class="form-group col-md-6" floatLabel="always">
+    <mat-label> Pincode</mat-label>
+    <input matInput #input type="email" placeholder="Enter Pincode" required>
+    </mat-form-field>
+    <div class="col-md-12 form-group underline">&nbsp;</div>
+    <mat-form-field class="form-group col-md-6" floatLabel="always">
+        <mat-label> Email</mat-label>
+        <input matInput #input type="email" placeholder="Enter Email" required>
+        </mat-form-field>
+<mat-form-field class="form-group col-md-6" floatLabel="always">
+<mat-label> Mobile  number</mat-label>
+<input matInput #input type="text" placeholder="Enter Mobile number" required>
+</mat-form-field>
+<mat-form-field class="form-group col-md-6" floatLabel="always">
+<mat-label> Recipient Name</mat-label>
+<input matInput #input type="text" placeholder="Enter name" required>
+</mat-form-field>
+<div class="form-group col-md-6">
+    <mat-label>Gender</mat-label>
+    <ul class="donate-now">
+        <li>
+          <input type="radio" id="Male" name="gender" checked />
+          
+          <label for="Male" class="d-flex align-items-center"><img class="img-fluid " src="assets/images/men-ic.svg" alt="header-image"> Male</label>
+        </li>
+        <li>
+          <input type="radio" id="female" name="gender" />
+          <label for="female" class="d-flex align-items-center"> <img class="img-fluid " src="assets/images/women-ic.svg" alt="header-image"> Female</label>
+        </li>
+        </ul>
+</div>
+<mat-form-field  class="form-group col-md-6"  floatLabel="always">
+    <mat-label>Relationship</mat-label>
+    <mat-select  matInput #input required placeholder="Enter or select relationship">
+      <mat-option value="one">Brother</mat-option>
+      <mat-option value="two">Sister</mat-option>
+    </mat-select>
+    </mat-form-field>
+<mat-form-field class="form-group col-md-6" floatLabel="always">
+    <mat-label> Age</mat-label>
+    <input matInput #input type="text" placeholder="Enter age" required>
+    </mat-form-field>
+    <div class="col-md-12 form-group underline">&nbsp;</div>
+
+    <h4 class="recipient">Occation Details</h4>
+    <mat-radio-group  aria-label="Select an option" class="mt-3 form-group">
+        <mat-radio-button value="1">Personal Occasion</mat-radio-button>
+        <mat-radio-button value="2">Festival Occasion</mat-radio-button>
+        <mat-radio-button value="2">Others</mat-radio-button>
+      </mat-radio-group>
+      <div class="col-md-12">&nbsp;</div>
+      <mat-form-field  class="form-group col-md-6" floatLabel="always">
+        <mat-label>Festival Occasion*</mat-label>
+        <mat-select matInput #input required>
+          <mat-option value="one">New Year</mat-option>
+          <mat-option value="two">Pongal ( Makar Sankranti)</mat-option>
+          <mat-option value="one">Holi</mat-option>
+          <mat-option value="two">Bihu</mat-option>
+          <mat-option value="one">Eid UI Fitr</mat-option>
+          <mat-option value="two">Raksha Bandhan</mat-option>
+        </mat-select>
+        </mat-form-field>
+      <mat-form-field  class="form-group col-md-6" floatLabel="always">
+        <mat-label>Occasion Date</mat-label>
+    <input matInput #input required  [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+<div class="mt-4 form-group text-center">
+<button class="btn button btn-block w-50 mx-auto"   routerLink="/payment">Proceed To Pay</button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+    <div class="side-box-cart">
+        <h3 class="side-heading mt-2 mb-4">   Order Summary</h3>
+        <p>Sub total <span> &#8377; 29,198</span></p>
+        <p>Gift packing
+            <span> Free</span></p>
+        <p>Offer Discount <span> &#8377; 569</span></p>
+        <p class="pay">Payable Amount <span > &#8377; 29,198</span></p>
+        <ul class="list-inline d-flex">
+            <li><img src="assets/images/mark-cart.svg" /></li>
+<li class="ms-2"><small class="cart-small">Lorem ipsum, or lipsum as it is sometimes
+    known print.</small></li>
+        </ul>
+        <div class="mt-3 text-center">
+    </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+</section>

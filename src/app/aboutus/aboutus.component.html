@@ -1,0 +1,46 @@
+<section class="deafult-page-bg">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+           <div class="col-md-5">
+               <h2>About US</h2>
+        
+           </div> 
+           <div class="col-md-7 text-center">
+              <img class="img-fluid banner-image" src="assets/images/aboutus.svg" alt="banner-image">
+               </div>
+        </div> 
+
+    </div>
+</section>
+<section class="about-us">
+    <div class="container">
+        <h3>Who are we</h3>
+        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.</p>
+
+           <p> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.</p>
+    <h3>Our Mission</h3>
+    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.</p>
+
+    <p> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown.</p>
+        </div>
+</section>
+<app-counter></app-counter>
+<section class="stores-abt position-relative about">
+ 
+      <div class="container">
+          <h3 class="sub-heading-h3">Partners and Vendors</h3>
+          <owl-carousel-o [options]="customOptions" >
+  
+              <ng-container *ngFor="let item of images">
+                <ng-template carouselSlide >
+                    <div class="vendor-box">
+                        <img src="{{item.img}}" class="img-fluid" />
+                    </div>
+                    <h5 class="vendor-name">{{item.name}}</h5>
+                </ng-template>
+              </ng-container>
+            
+            </owl-carousel-o>
+  
+      </div>
+  </section>

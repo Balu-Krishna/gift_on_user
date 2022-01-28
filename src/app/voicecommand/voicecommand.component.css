@@ -1,0 +1,85 @@
+.icon-location-box h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.popular {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.loc-close {
+  float: right;
+  font-size: 2rem;
+  color: #000;
+}
+.stories_informative {
+  padding: 100px 0;
+}
+.stories_informative .something_image {
+  padding-right: 50px;
+}
+.stories_info img {
+  position: absolute;
+  left: 0;
+  top: 111px;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bottom_bellon img {
+  position: absolute;
+  right: 0;
+  height: 159px;
+  bottom: 18%;
+}
+
+@media (max-width: 767px) {
+ 
+  .stories_informative .something_image {
+    padding-right: 0px;
+  }
+ .stories_informative {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 20px 0 70px;
+  }
+  .stories_informative h4{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  ::ng-deep .stories_info img {
+    top: 202px !important;
+    opacity: 0.2 !important;
+  }
+  .bottom_bellon img{
+    bottom: 184px;
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  .bottom_bellon img{
+    top: 400px !important;
+  }
+}
+@media(min-width:992px) and (max-width:1100px){
+ 
+  .stories_informative{
+    padding: 100px;
+  }
+  .stories_info img{
+    top: 135px;
+    z-index: -1;
+  }
+  .sub-heading-h3{
+    padding-left: 100px;
+  }
+  .bottom_bellon img{
+    top: 400px !important;
+  }
+  
+}

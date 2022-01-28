@@ -1,0 +1,229 @@
+<section class="deafult-page-bg bg-transparent">
+  <div class="container h-100">
+    <div class="bread-crumb">
+      <div>Home / Fashion / Men / Shirts / <span class="active">Porto - Slim Fit Printed Men Shirt - Beige</span>
+      </div> <div><img src="assets/images/Vector.png" class="text-end">
+      </div>
+
+    </div>
+    <div class="row h-100 ">
+      <div class="col-md-5">
+        <div class="main-image">
+          <img src="assets/images/f-big.svg" class="img-fluid" />
+        </div>
+        <ul class="d-flex d-flex list-inline mt-2 small-img">
+          <li> <img src="assets/images/1.jpg" class="img-fluid" style="border : 1px solid #B76E79;" /> </li>
+          <li> <img src="assets/images/1.jpg" class="img-fluid" /> </li>
+          <li> <img src="assets/images/1.jpg" class="img-fluid" /> </li>
+          <li> <img src="assets/images/1.jpg" class="img-fluid" /> </li>
+        </ul>
+      </div>
+      <div class="col-md-7">
+        <h3 class="product-name">Porto - Slim Fit Printed Men Shirt - Beige</h3>
+        <div class="row">
+          <div class="col-md-6 price-div">
+            <h5>Price : &#8377;2,999</h5>
+            <span class="inctaxes mt-2">(Inc all taxes)</span>
+          </div>
+          <div class="col-md-6 ratting-count text-end">
+            <i class="las la-star"></i> <i class="las la-star"></i> <i class="las la-star"></i><i
+              class="las la-star"></i>
+            <i class="las la-star-half"></i> <span>2,567</span>
+          </div>
+          <div class="col-md-12">
+            <h6 class="stock">Availability : <span>In Stock</span></h6>
+          </div>
+          <div class="col-md-12">
+            <h5 class="near">Also in Near by Outlets <i class="las la-angle-down"></i></h5>
+          </div>
+          <div class="col-md-12">
+            <p class="colour">Colour <span>Cream</span></p>
+          </div>
+          <ul class="d-flex d-flex list-inline mt-2 small-img">
+            <li> <img src="assets/images/1.jpg" class="img-fluid" style="border : 1px solid #B76E79;" /> </li>
+            <li> <img src="assets/images/1.jpg" class="img-fluid" /> </li>
+            <li> <img src="assets/images/1.jpg" class="img-fluid" /> </li>
+            <li> <img src="assets/images/1.jpg" class="img-fluid" /> </li>
+          </ul>
+          <div class="col-md-12">
+            <p class="size"> <span>Size</span> <a class="active">Small</a> <a>Medium</a> <a>Large</a> <a>XLarge</a></p>
+          </div>
+          <div class="col-md-12">
+            <ul class="section-details">
+              <li>Care Instructions: Hand Wash Only</li>
+              <li>Fit Type: Regular Fit</li>
+              <li> Stylish Half sleeve Casual Printed Shirts & Party Wear Casual shirts</li>
+              <li>100% Premium Poly Cottton, Pre Washed for an extremely soft finish and Rich look
+              </li>
+              <li>Disclaimer: Product colour may slightly vary due to photographic lighting sources or your monitor
+                settings</li>
+              <li>Modern slim fit ( we have updated our size chart, please refer the size chart for new measurements
+                before ordering)</li>
+              <li>Breathable : Truly comfortable and easy to wear in every season it is insulating in winter and
+                breathable in summer.</li>
+            </ul>
+          </div>
+          <div class="clearfix mb-4"></div>
+          <div class="   mb-3 d-flex text-start">
+            <button class="btn button-outline   w-40 " (click)="addWishlist();">Add to Wishlist</button> <button
+              (click)="addCart();" class="btn button-full ms-2   w-40 ">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <h4 class="spec-h">Product Details</h4>
+      </div>
+      <div class="col-md-6">
+        <ul class="Specifications">
+          <li><small>Product Dimensions</small> <span>28 x 20 x 4 cm; 380 Grams
+            </span></li>
+          <li><small>Date First Available</small> <span>1 April 2021
+            </span></li>
+          <li><small>Manufacturer</small> <span>LookMark
+            </span></li>
+          <li><small>ASIN</small> <span>B091J39NSQ</span></li>
+
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="Specifications">
+          <li><small>Net Quantity</small> <span>1.00 count</span></li>
+          <li><small>Generic Name</small> <span>Printed Shirt</span></li>
+          <li><small>Item model number</small> <span>Printed Shirt Alpha-S</span></li>
+          <li><small>Department</small> <span>Men</span></li>
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="product-banner position-relative stores">
+  <div class="container">
+    <h3 class="sub-heading-h3">Similar Products <a class="view-all float-end">View All <i
+          class="las la-long-arrow-alt-right"></i></a></h3>
+    <owl-carousel-o [options]="productOptions">
+
+      <ng-container *ngFor="let slide of Products">
+        <ng-template carouselSlide>
+          <div class="product-box">
+            <div class="product-box-image">
+              <img src="{{slide.img}}" class="img-fluid product-image" alt="product-image" />
+            </div>
+            <h4>{{slide.name}}</h4>
+            <div class="product-details"><img src="assets/images/rupee.svg" /><span class="ps-2">{{slide.price}}</span>
+            </div>
+            <div class="product-details"><img src="assets/images/userproduct.svg" /><span
+                class="ps-2">{{slide.cust}}</span></div>
+            <p class="gift-now">Gift Now <i class="las la-long-arrow-alt-right"></i> <img
+                src="assets/images/giftheader.svg"></p>
+          </div>
+        </ng-template>
+      </ng-container>
+
+    </owl-carousel-o>
+  </div>
+</section>
+<section class="product-banner position-relative">
+  <img src="assets/images/cut-n-half.png" class="curve-cut-half">
+  <div class="container">
+    <h3 class="sub-heading-h3">Top Reviews <a class="view-all float-end">View All <i
+          class="las la-long-arrow-alt-right"></i></a></h3>
+    <div class="review-box mb-4">
+      <ul class="d-flex list-inline">
+        <li class="w-5"> <img class="img-fluid " src="assets/images/user-header.svg" alt="header-image"></li>
+        <li class="w-85 review-content">
+          <h3>Manish Manu</h3>
+          <div class=" ratting-count ">
+            <i class="las la-star"></i> <i class="las la-star"></i> <i class="las la-star"></i><i
+              class="las la-star"></i>
+            <i class="las la-star-half"></i>
+          </div>
+          <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print. Lorem ipsum, or
+            lipsum as it is sometimes known, is dummy text used in laying out print. </p>
+          <small>199 people found this helpful</small>
+          <a class="helpful">Helpful</a>
+        </li>
+        <li class="w-10 text-end"><span class="date">20th Sep, 2021</span></li>
+      </ul>
+
+    </div>
+    <div class="review-box mb-4">
+      <ul class="d-flex list-inline">
+        <li class="w-5"> <img class="img-fluid " src="assets/images/user-header.svg" alt="header-image"></li>
+        <li class="w-85 review-content">
+          <h3>Manish Manu</h3>
+          <div class=" ratting-count ">
+            <i class="las la-star"></i> <i class="las la-star"></i> <i class="las la-star"></i><i
+              class="las la-star"></i>
+            <i class="las la-star-half"></i>
+          </div>
+          <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print. Lorem ipsum, or
+            lipsum as it is sometimes known, is dummy text used in laying out print. </p>
+          <small>199 people found this helpful</small>
+          <a class="helpful">Helpful</a>
+        </li>
+        <li class="w-10 text-end"><span class="date">20th Sep, 2021</span></li>
+      </ul>
+
+    </div>
+    <div class="review-box mb-4">
+      <ul class="d-flex list-inline">
+        <li class="w-5"> <img class="img-fluid " src="assets/images/user-header.svg" alt="header-image"></li>
+        <li class="w-85 review-content">
+          <h3>Manish Manu</h3>
+          <div class=" ratting-count ">
+            <i class="las la-star"></i> <i class="las la-star"></i> <i class="las la-star"></i><i
+              class="las la-star"></i>
+            <i class="las la-star-half"></i>
+          </div>
+          <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print. Lorem ipsum, or
+            lipsum as it is sometimes known, is dummy text used in laying out print. </p>
+          <small>199 people found this helpful</small>
+          <a class="helpful">Helpful</a>
+        </li>
+        <li class="w-10 text-end"><span class="date">20th Sep, 2021</span></li>
+      </ul>
+
+    </div>
+
+    <div class="review-box mb-4">
+      <ul class="d-flex list-inline">
+        <li class="w-5"> <img class="img-fluid " src="assets/images/user-header.svg" alt="header-image"></li>
+        <li class="w-85 review-content">
+          <h3>Manish Manu</h3>
+          <div class=" ratting-count ">
+            <i class="las la-star"></i> <i class="las la-star"></i> <i class="las la-star"></i><i
+              class="las la-star"></i>
+            <i class="las la-star-half"></i>
+          </div>
+          <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print. Lorem ipsum, or
+            lipsum as it is sometimes known, is dummy text used in laying out print. </p>
+          <small>199 people found this helpful</small>
+          <a class="helpful">Helpful</a>
+        </li>
+        <li class="w-10 text-end"><span class="date">20th Sep, 2021</span></li>
+      </ul>
+
+    </div>
+    <div class="review-box mb-4">
+      <ul class="d-flex list-inline">
+        <li class="w-5"> <img class="img-fluid " src="assets/images/user-header.svg" alt="header-image"></li>
+        <li class="w-85 review-content">
+          <h3>Manish Manu</h3>
+          <div class=" ratting-count ">
+            <i class="las la-star"></i> <i class="las la-star"></i> <i class="las la-star"></i><i
+              class="las la-star"></i>
+            <i class="las la-star-half"></i>
+          </div>
+          <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print. Lorem ipsum, or
+            lipsum as it is sometimes known, is dummy text used in laying out print. </p>
+          <small>199 people found this helpful</small>
+          <a class="helpful">Helpful</a>
+        </li>
+        <li class="w-10 text-end"><span class="date">20th Sep, 2021</span></li>
+      </ul>
+
+    </div>
+  </div>
+</section>

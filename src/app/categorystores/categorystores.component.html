@@ -1,0 +1,141 @@
+<section class="deafult-page-bg">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-md-5">
+                <h2>Jewellery - Rings</h2>
+
+            </div>
+            <div class="col-md-7 text-center">
+                <img class="img-fluid banner-image" src="assets/images/jewelry.svg" alt="banner-image">
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="filters">
+    <div class="container">
+        <div class="seleted-filters">
+            <a class="active">Rings</a> <a>Earrings</a> <a>Pendent</a>
+            <a>Chain</a> <a>Bangles</a> <a>Bracelet</a> <a>Necklace</a>
+            <div class="dropdown" >
+                <a class="" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">More <i class="las la-angle-down"></i></a>
+                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <p class="dropdown-item" href="#">Brand</p>
+                    </li>
+                    <li>
+                        <p class="dropdown-item" href="#">Brand</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="filters-ul d-flex mb-0">
+            <li>
+                <div class="dropdown">
+                    <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Gender <i class="las la-angle-down"></i>
+               </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Male</a></li>
+                        <li><a class="dropdown-item" href="#">Female</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Type <i class="las la-angle-down"></i>
+               </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Type 1</a></li>
+                        <li><a class="dropdown-item" href="#">Type 2</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Price <i class="las la-angle-down"></i>
+           </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Price 2</a></li>
+                        <li><a class="dropdown-item" href="#">Price 2</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+     Gold Purity <i class="las la-angle-down"></i>
+        </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">22kt</a></li>
+                        <li><a class="dropdown-item" href="#">24kt</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Offers <i class="las la-angle-down"></i>
+           </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Product Offers</a></li>
+                        <li><a class="dropdown-item" href="#">Store Offers</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class=" dropdown-toggle border-end-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        New Arrivals <i class="las la-angle-down"></i>
+           </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">New</a></li>
+                        <li><a class="dropdown-item" href="#">Best</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <p class="filter-pill"> <a>Women <i class="las la-times"></i></a><a>Platinum <i class="las la-times"></i></a><a class="clear-all">Clear All</a></p>
+
+
+    </div>
+</section>
+<section class="offer">
+    <div class="container">
+        <h3 class="sub-heading-h3">Offers <a class="view-all float-end">View All <i class="las la-long-arrow-alt-right"></i></a></h3>
+        <owl-carousel-o [options]="customOptions">
+
+            <ng-container *ngFor="let slide of dynamicSlides">
+                <ng-template carouselSlide>
+                    <img [src]="slide.src" [alt]="slide.alt" class="">
+                </ng-template>
+            </ng-container>
+
+        </owl-carousel-o>
+
+    </div>
+</section>
+<section class="position-relative">
+    <img src="assets/images/curvecut.png" class="curve-cut">
+    <img src="assets/images/cut-n-half.png" class="curve-cut-half">
+    <div class="container">
+        <h3 class="sub-heading-h2">Outlets (6 items) </h3>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3" *ngFor="let item of stores">
+                <div class="store-box store-box-2" routerLink="/store-products">
+                    <div class="store-image">
+                        <img src="{{item.img}}" class="img-fluid store-image-grid" alt="store-image" />
+                    </div>
+                    <div class="store-content">
+                        <h3>{{item.name}}</h3>
+                        <div class="store-details"><img src="assets/images/location.svg" /><span class="ps-2">{{item.address}}</span></div>
+                        <div class="store-details"><img src="assets/images/user.png" /><span class="ps-2">{{item.cust}}</span></div>
+                        <p class="mb-0 mt-2"><a class="view-all">View All <img src="assets/images/right.svg" class="right-arrow" /></a> <span class="rating float-end"><i class="las la-star"></i> {{item.rating}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

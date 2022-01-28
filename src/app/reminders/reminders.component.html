@@ -1,0 +1,116 @@
+<section class="profile-page-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <app-profilenav></app-profilenav>
+            </div>
+            <div class="col-md-8">
+                <div class="profile-shadow-box">
+                    <h3 *ngIf="isShown">Reminders</h3>
+                    <mat-tab-group mat-stretch-tabs *ngIf="isShown">
+                        <mat-tab label="Account Reminders" class="col">
+                            <div class="mt-3">&nbsp;</div>
+                            <div class="notification-box mb-4 d-flex align-items-center border-bottom pb-3">
+                                <div class="first">
+                                    <img src="assets/images/remindercalendar.svg">
+                                </div>
+                                <div class="second">
+                                    <h5>Your friend anniversary on 30th Nov 2021</h5>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</p>
+                                </div>
+                                <div class="third">
+                                    <a href=""><i class="las la-times notification-close"></i></a>
+                                </div>
+                            </div>
+                            <div class="notification-box mb-4 d-flex align-items-center border-bottom pb-3">
+                                <div class="first">
+                                    <img src="assets/images/remindercalendar.svg">
+                                </div>
+                                <div class="second">
+                                    <h5>Your friend birthday on 30th Nov 2021</h5>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</p>
+                                </div>
+                                <div class="third">
+                                    <a href=""><i class="las la-times notification-close"></i></a>
+                                </div>
+                            </div>
+                            <div class="notification-box mb-4 d-flex align-items-center border-bottom pb-3">
+                                <div class="first">
+                                    <img src="assets/images/remindercalendar.svg">
+                                </div>
+                                <div class="second">
+                                    <h5>Your friend anniversary on 30th Nov 2021</h5>
+                                    <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</p>
+                                </div>
+                                <div class="third">
+                                    <a href=""><i class="las la-times notification-close"></i></a>
+                                </div>
+                            </div>
+                        </mat-tab>
+                        <mat-tab label="Occasion Reminders" class="card-body">
+                            <div class="mt-3">&nbsp;</div>
+                            <h4 class="spending">This Week <span class="float-end"><a (click)="toggleShow()">Add New
+                                        Reminder</a><img src="assets/images/calendaricon.svg" class="me-1" /> <img
+                                        src="assets/images/filter.svg" class="me-1" /></span></h4>
+                            <div class="notification-box mb-4 d-flex align-items-center border-bottom pb-3">
+                                <div class="first">
+                                    <img src="assets/images/user-header.svg">
+                                </div>
+                                <div class="second occasion-reminder">
+                                    <h5>Vamshi Ram - <span class="occasion">Birthday</span></h5>
+                                    <p>Friend</p>
+                                </div>
+                                <div class="third occasion-reminder  text-end">
+                                    <img src="assets/images/calendaricon.svg" class="mw-2"> <span class="occasion-date">17th September 2021</span>
+                                </div>
+                            </div>
+
+
+                        </mat-tab>
+                    </mat-tab-group>
+                    <div class="mt-4 form-group " *ngIf="!isShown">
+
+                        <h4 class="spending">Add Reminders <span class="float-end"><i (click)="toggleShow()"
+                                    class="las la-times close-order"></i></span></h4>
+                        <div class="row ">
+                            <mat-form-field class="form-group col-md-6" floatLabel="always">
+                                <mat-label> Full Name</mat-label>
+                                <input matInput #input type="email" placeholder="Enter Name" required>
+                            </mat-form-field>
+                            <mat-form-field class="form-group col-md-6" floatLabel="always">
+                                <mat-label>Occasion Date</mat-label>
+                                <input matInput #input [matDatepicker]="picker" placeholder="DD/MM/YYYY" required>
+                                <mat-datepicker-toggle matSuffix [for]="picker">
+                                    <mat-icon matDatepickerToggleIcon></mat-icon>
+                                </mat-datepicker-toggle>
+                                <mat-datepicker #picker disabled="false"></mat-datepicker>
+                            </mat-form-field>
+                            <mat-form-field class="form-group col-md-6" floatLabel="always">
+                                <mat-label>Occasion</mat-label>
+                                <mat-select matInput #input placeholder="Select Occasion" required>
+                                    <mat-option value="one">Birthday</mat-option>
+                                    <mat-option value="two">Birthday</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field class="form-group col-md-6" floatLabel="always">
+                                <mat-label>Relationship</mat-label>
+                                <mat-select placeholder="Select Relationship" required>
+                                    <mat-option value="one">Brother</mat-option>
+                                    <mat-option value="two">Sister</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="mt-4 form-group text-center">
+                            <button class="btn button btn-block w-50 mx-auto" (click)="toggleShow();addReminder()">Add
+                                Reminder</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

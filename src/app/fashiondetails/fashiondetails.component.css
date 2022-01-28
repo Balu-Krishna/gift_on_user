@@ -1,0 +1,342 @@
+.bg-transparent {
+    background: transparent;
+}
+
+.bread-crumb {
+    margin-top: -38px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bread-crumb .active {
+    color: #505565;
+    opacity: 0.7;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.price-div h5 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #B76E79;
+    ;
+}
+
+.ratting-count i {
+    color: #FFA001;
+}
+
+.stock {
+    font-size: 0.75rem;
+    margin: 0.5rem 0;
+    color: #b3b3b3
+}
+
+.stock span {
+    padding-left: 0.4rem;
+    font-weight: 600;
+    color: #242529;
+}
+
+.near {
+    font-size: 0.9rem;
+    color: #8A6E4B;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.descp {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+}
+
+.details {
+    color: #8A6E4B;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.mat-label {
+    text-transform: uppercase;
+}
+
+.wt {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.wt span {
+    font-weight: 600;
+}
+
+.price-break-up {
+    background: #F9FBFE;
+    padding: 1rem;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.small-img li img {
+    margin: 0.25rem;
+    border-radius: 10px;
+    display: block;
+    width: 90%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.price-break-up h6 {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.detailsdiv {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    float: left;
+}
+
+.detailsdiv label {
+    color: #000;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.detailsdiv span {
+    display: block;
+    font-size: 0.7rem;
+    color: #505565;
+}
+
+.ratting-count span {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.price-div span {
+    font-size: 0.75rem;
+    color: #B3B4B9;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.first,
+.third {
+    width: 7%;
+}
+
+.second {
+    width: 86%;
+}
+
+.notification-box h5 {
+    font-size: 0.9rem;
+    color: #171E30;
+    font-weight: 600;
+}
+
+.notification-box p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+
+.notification-close {
+    font-size: 1.25rem;
+    color: #171E30;
+}
+
+.w-85 {
+    width: 80%
+}
+
+.w-5 {
+    width: 5%
+}
+
+.w-10 {
+    width: 15%
+}
+
+.review-content h3 {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.spec-h {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.review-content p {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.Specifications {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+ul {
+    padding-inline-start: 10px;
+}
+
+.colour {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.size span {
+    display: block;
+    font-weight: 600;
+    color: #000;
+}
+
+.size a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.size a.active,
+.size a:hover {
+    color: var(--main);
+    text-decoration: none;
+}
+
+.colour span {
+    font-weight: 600;
+    color: var(--main);
+}
+
+.Specifications li {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+.Specifications li span {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.Specifications li small {
+    display: inline-block;
+    font-size: 0.8rem;
+    width: 50%;
+}
+
+.helpful {
+    color: #505565;
+    border: 1.75px solid #8A6E4B;
+    text-decoration: none;
+    font-size: 0.75rem;
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    /* margin-top: 1rem; */
+    border-radius: 20px;
+}
+
+.button-outline:hover {
+    border: 1px solid #91793F;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 24px;
+}
+.button-outline {
+    border: 1px solid #91793F;
+    box-sizing: border-box;
+    color: #91793F;
+    font-size: 16px;
+    font-weight: 600;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
+    border-radius: 24px;
+}
+
+.button-full {
+
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(90.84deg, #A38A55 0%, #91793F 106.23%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    color: #F9FBFE;
+}
+.review-content small,
+.date {
+    font-size: 0.7rem;
+    display: block;
+}
+
+.review-content small {
+    font-size: 0.9rem;
+    display: block;
+    font-weight: 600;
+    color: #505565;
+    margin: 1rem 0;
+}
+
+.section-details li {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #505565;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) and (orientation:portrait) {}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+    .w-40 {
+        width: auto;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+    .profile-shadow-box {
+        padding: 1rem 0.5rem;
+    }
+    .seleted-filters
+    {
+        display: block !important;
+        margin-right:0 ;
+   }
+    .seleted-filters a {
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+        margin: 0.3rem 0.3rem;
+    }
+    .filters-ul {
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .filter-pill {
+        margin-bottom: 1rem;
+    }
+    .mat-expansion-panel-header-title {
+        font-family: "Montserrat", sans-serif !important;
+        color: #000;
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 16px;
+    }
+}

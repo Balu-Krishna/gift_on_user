@@ -1,0 +1,113 @@
+.first,
+.third {
+    width: 7%;
+}
+
+.second {
+    width: 86%;
+}
+
+.spending {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.occasion-reminder.second {
+    width: 50%;
+}
+
+.close-order {
+    font-size: 1.5rem;
+}
+
+.occasion-reminder.third {
+    width: 36%;
+}
+
+.spending a {
+    color: #8a6e4b;
+    font-size: 0.8rem;
+    margin-right: 0.75rem;
+    cursor: pointer;
+}
+
+.first img {
+    vertical-align: text-top;
+    height: 25px;
+}
+
+.notification-box h5 {
+    font-size: 0.9rem;
+    color: #171e30;
+    font-weight: 600;
+}
+
+.spending span {
+    display: inline-block;
+    color: #505565;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+.occasion-date {
+    display: inline-block;
+    font-size: 0.825rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+    position: relative;
+    top: 3px;
+}
+
+.notification-box p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+
+.notification-close {
+    font-size: 1.25rem;
+    color: #171e30;
+}
+
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.mat-datepicker-toggle {
+    background: url("../../assets/images/calender.png") no-repeat !important;
+    position: absolute;
+    top: -10px;
+    right: -8px;
+}
+
+:ng-deep .mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background: #8A6E4B !important;
+    visibility: visible !important;
+    left: 0px !important;
+    width: 336px !important;
+    height: 4px !important;
+}
+
+.btn {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 20px;
+    background: linear-gradient(90.84deg, #A38A55 0%, #91793F 106.23%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+    .notification-box h5{
+        margin-left: 20px;
+    }
+    .notification-box p{
+        margin-left: 20px;
+    }
+
+    
+}

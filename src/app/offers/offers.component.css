@@ -1,0 +1,8 @@
+.offer {
+    padding: 0.5rem;
+    background-color: #F9B9B8;
+    background-image: url(/assets/images/counter-love.svg);
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+    background-attachment: scroll;
+}

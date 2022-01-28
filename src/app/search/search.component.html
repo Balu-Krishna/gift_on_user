@@ -1,0 +1,37 @@
+<section class="deafult-page-bg">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-md-5">
+                <h2>Search Results</h2>
+
+            </div>
+            <div class="col-md-7 text-center">
+                <img class="img-fluid banner-image" src="assets/images/searchresults.svg" alt="banner-image">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="stores position-relative ">
+    <div class="container h-100">
+        <h3 class="sub-heading-h2">Outlets (6 items) </h3>
+        <div class="row h-100">
+            <div class="col-md-12">
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-3" *ngFor="let item of stores">
+                <div class="store-box store-box-2">
+                    <div class="store-image">
+                        <img src="{{item.img}}" class="img-fluid store-image-grid" alt="store-image" />
+                    </div>
+                    <div class="store-content">
+                        <h3>{{item.name}}</h3>
+                        <div class="store-details"><img src="assets/images/location.svg" /><span class="ps-2">{{item.address}}</span></div>
+                        <div class="store-details"><img src="assets/images/user.png" /><span class="ps-2">{{item.cust}}</span></div>
+                        <p class="mb-0 mt-2"><a class="view-all">View All<img src="assets/images/right.svg" class="right-arrow" /></a> <span class="rating float-end"><i class="las la-star"></i> {{item.rating}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

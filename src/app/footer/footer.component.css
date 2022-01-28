@@ -1,0 +1,73 @@
+footer {
+  background-color: #505565;
+  padding: 3rem;
+  background-image: url(/assets/images/5.png);
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+footer ul {
+  padding-inline-start: 0px;
+  list-style: none;
+}
+footer h4 {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+footer ul li {
+  margin-bottom: 0.65rem;
+}
+footer li a {
+  text-decoration: none !important;
+  font-size: 0.975rem;
+  font-weight: 500;
+  color: #fff;
+}
+footer li a:hover {
+  color: #b76e79;
+}
+.address-ul li {
+  margin-bottom: 1rem !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.address-ul li img {
+  padding-right: 1rem;
+}
+.social-image {
+  margin: 0.25rem 0.5rem;
+  margin-left: 0;
+}
+.address-ul {
+  margin-bottom: 1.5rem !important;
+}
+.footer-bottom {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 0.6px solid #b3b4b9;
+  margin-top: 2rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+  footer {
+    padding-top: 20px;
+  }
+  .reach_us {
+    text-align: center;
+  }
+  .reach_informative .address-ul {
+    margin: 0 auto;
+    width: 185px;
+  }
+  .reach_informative .social-div {
+    text-align: center;
+  }
+  .reach_informative .download_info {
+    text-align: center;
+  }
+  .reach_informative .footer-bottom{
+    text-align: center;
+  }
+}

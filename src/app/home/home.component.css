@@ -1,0 +1,224 @@
+.home-page-bg {
+  background: linear-gradient(180deg, #fbf1f0 0%, rgba(255, 255, 255, 0) 100%);
+  position: relative;
+  padding: 4rem;
+}
+.home-page-bg::after {
+  content: "";
+  background-image: url(../../assets/images/Ellipse628.png);
+  position: absolute;
+  left: 0;
+  top: -20px;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.circle_homeInfo {
+  position: absolute;
+  top: 65%;
+  right: 39%;
+}
+
+.home-page-bg::before {
+  content: "";
+  background-image: url(../../assets/images/Group19440.png);
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom 5px right 7px;
+}
+
+.stores {
+  background-position-y: 76px;
+}
+.home-page-bg h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.banner-image {
+  margin: 1rem 0;
+}
+.home-page-bg h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+.home-page-bg h4 {
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.choose-btn {
+  box-shadow: 0px 4px 15px 0px #00000026;
+  background: linear-gradient(90.84deg, #a38a55 0%, #91793f 106.23%);
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.choose-btn:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+.category-icon {
+  margin: 0 auto 1rem;
+  display: block;
+  height: 70px;
+  object-fit: contain;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.birthday-box:hover .category-icon {
+  transform: scale(1.2);
+}
+.category-icon-row h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.birthday-box:hover h4 {
+  color: var(--main);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.testimonial-grid ul {
+  list-style: none;
+}
+.testimonial-ul {
+  padding-inline-start: 0px;
+}
+.testimonial-ul h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+::ng-deep .owl-theme .owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-ul h5 span {
+  font-size: 0.7rem;
+  display: block;
+  font-weight: normal;
+  color: #505565;
+  margin-top: 0.5rem;
+}
+.ballon {
+  position: absolute;
+  top: 20px;
+  left: -24px;
+  transform: rotate(-20deg);
+}
+.testimonial-ul img {
+  height: 50px;
+  padding-right: 1rem;
+}
+.testimonial-grid {
+  margin: 2rem auto;
+}
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: left;
+}
+::ng-deep #overlay_inforamtive {
+  position: relative;
+}
+::ng-deep #overlay_inforamtive::before {
+  position: absolute;
+  left: 468px;
+  width: 351px;
+  height: 165px;
+  background: #fff;
+  top: 18px;
+  content: "";
+  opacity: 0.7;
+  z-index: 999999999;
+}
+@media (max-width: 767px) {
+  ::ng-deep .navbar-toggler {
+    padding: 0;
+  }
+  ::ng-deep .home-page-bg::after {
+    top: 0 !important;
+  }
+  ::ng-deep #overlay_inforamtive::before {
+    display: none;
+  }
+  .testmonial_image {
+    position: absolute;
+  }
+}
+@media (min-width: 768px) and (orientation: portrait) {
+  .home-page-bg h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  .product-banner .owl-prev,
+  .testimonimal-banner .owl-prev {
+    right: 5% !important;
+  }
+  #overlay_inforamtive::before {
+    display: none;
+  }
+  ::ng-deep .login_register {
+    position: absolute;
+    top: 95px;
+    z-index: 9999999;
+    right: 0;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+  .home-page-bg::before {
+    position: absolute;
+    bottom: 207px;
+  }
+  .sub-heading-h3{
+    font-size: 20px !important;
+    margin-bottom: 00.5rem !important;
+
+  }
+  .view-all{
+    line-height: 25px;
+  }
+  .product-box-image .product-image {
+    width: 100% !important;
+    height: auto !important;
+  }
+  ::ng-deep .product-banner .owl-theme .owl-nav [class*="owl-"],
+.testimonimal-banner .owl-theme .owl-nav [class*="owl-"] {
+    top: -8%;
+    transform: translateY(0%);
+}
+
+}
+@media only screen and (max-width: 320px) {
+}
+
+@media (min-width: 768px) and(max-width:992px) {
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+  .circle_homeInfo {
+    position: absolute;
+    top: 58%;
+    right: 35%;
+  }
+  ::ng-deep .login_register {
+    top: 25px !important;
+  }
+}
+
+/* ::ng-deep .header-main ul .login_register {
+  display: block !important;
+} */
+/* ::ng-deep .header-main ul .user_informative{
+    display: none !important;
+} */

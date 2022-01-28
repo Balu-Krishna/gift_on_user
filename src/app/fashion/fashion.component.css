@@ -1,0 +1,60 @@
+
+.offer{
+    padding:0.5rem;
+    background-color:#ffd3d2;
+    background-image: url(/assets/images/counter-love.svg);
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+    background-attachment: scroll;
+}
+img.h-200 {
+    width: 98% ;
+    height: 230px;
+}
+::ng-deep .owl-prev{
+    left: -4% !important;
+}
+.store-box.store-box-2 img.store-image-grid {
+    border-radius: 20px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.offer .sub-heading-h3{
+    margin-left: 12px;
+ }
+@media (max-width:767px) {
+    .sub-heading-h3{
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+    .profile-shadow-box {
+        padding: 1rem 0.5rem;
+    }
+    .seleted-filters
+    {
+        display: block !important;
+        margin-right:0 ;
+   }
+    .seleted-filters a {
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+        margin: 0.3rem 0.3rem;
+    }
+    .filters-ul {
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .filter-pill {
+        margin-bottom: 1rem;
+    }
+    .mat-expansion-panel-header-title {
+        font-family: "Montserrat", sans-serif !important;
+        color: #000;
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 16px;
+    }
+}

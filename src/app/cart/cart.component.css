@@ -1,0 +1,240 @@
+    .wishlist {
+        background-image: url(/assets/images/banner-bg.svg);
+        padding: 2rem;
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+    
+    .wishlist-box,
+    .side-box,
+    .side-box-cart {
+        padding: 1rem;
+        background-color: #F9FBFE;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        position: relative;
+    }
+    
+    .side-box-cart p {
+        font-size: 0.825rem;
+    }
+    
+    .side-box-cart p.pay {
+        padding-top: 1rem;
+        border-top: 0.6px solid #B3B4B9;
+        color: #000;
+        font-weight: 600;
+    }
+    
+    .side-box-cart p.pay span {
+        color: #B76E79;
+    }
+    
+    .cart-small {
+        font-size: 0.75rem;
+        margin-bottom: 0;
+    }
+    
+    .side-box-cart p span {
+        float: right;
+        font-weight: 500;
+    }
+    
+    .wishlist-box ul {
+        margin-bottom: 0;
+        list-style: none;
+        padding-inline-start: 30px;
+    }
+    
+    .mat-check-cart {
+        position: absolute;
+        top: 8%;
+    }
+    
+    .wish-box-1 {
+        width: 10%;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 2%;
+    }
+    
+    .wish-box-1 img {
+        border-radius: 6px;
+    }
+    
+    .wish-box-2 {
+        width: 56%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .wish-box-3 {
+        margin-left: 2%;
+        width: 30%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+    }
+    
+    .wishlist-box .ratting-count span {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    
+    .wishlist-box .ratting-count i {
+        color: #FFA001;
+        font-size: 0.9rem;
+    }
+    
+    .wishlist-box .ratting-count {
+        margin-bottom: 0.5rem;
+    }
+    
+    .delete-wish img {
+        height: 15px;
+        vertical-align: text-top;
+        margin-right: 0.5rem;
+    }
+    
+    .delete-wish {
+        font-size: 0.85rem;
+        text-decoration: none;
+        font-weight: 500;
+        color: #505565;
+    }
+    
+    .wish-box-2 p {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .wish-box-2 p span {
+        font-weight: 600;
+        color: #000;
+    }
+    
+    .wishlist-box .inctaxes {
+        color: #B3B4B9;
+        font-size: 0.75rem;
+        margin: 0.25rem 0;
+    }
+    
+    .wishlist-box .stock {
+        color: #B76E79;
+        font-size: 0.8rem;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    .wishlist-box h3 {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #000;
+    }
+    
+    .wishlist-box .price-h {
+        color: #B76E79;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .side-heading {
+        font-size: 1rem;
+        line-height: 24px;
+        font-weight: 600;
+    }
+    
+    .side-list-product {
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 0.6px solid #B3B4B9;
+    }
+    
+    .side-first {
+        width: 20%;
+    }
+    
+    .side-second {
+        width: 65%;
+        margin-left: 5%;
+    }
+    
+    #viewall {
+        margin: 0 auto;
+        width: 50%;
+        margin-left: 80px;
+    }
+    
+    .start {
+        font-size: 0.75rem;
+        color: #505565;
+    }
+    
+    .side-third {
+        width: 10%;
+    }
+    
+    .side-third img {
+        height: 20px;
+        object-fit: contain;
+    }
+    
+    .side-second h3 {
+        font-size: 0.9rem;
+        color: #B76E79;
+        font-weight: 600;
+    }
+    
+    .mat-check {
+        display: block;
+        margin-top: 1rem;
+    }
+    
+    @media (min-width: 768px) and (orientation:portrait) {
+        .wish-box-3 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .wish-box-1 {
+            width: 20%;
+        }
+        .wish-box-2 {
+            width: 78%;
+            margin-bottom: 1rem;
+        }
+        .button.btn-wish {
+            padding: 0.4rem;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            margin-right: auto;
+            margin-left: 0 !important;
+        }
+    }
+    
+    @media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+        .wish-box-1,
+        .wish-box-2,
+        .wish-box-3 {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 1rem;
+        }
+        .wish-box-1 img {
+            border-radius: 6px;
+            height: 100px;
+        }
+        .button.btn-wish {
+            padding: 0.4rem;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            margin-right: auto;
+            margin-left: 0 !important;
+        }
+    }
+    
+    @media only screen and (max-width: 320px) {}
+    
+     ::ng-deep .mat-checkbox-checked .mat-checkbox-background {
+        background-color: #f8b8b7 !important;
+    }

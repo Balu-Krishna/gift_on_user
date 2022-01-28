@@ -1,0 +1,220 @@
+<section class="profile-page-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <app-profilenav></app-profilenav>
+            </div>
+            <div class="col-md-8">
+                <div class="profile-shadow-box">
+                    <div *ngIf="isShown">
+                        <h3>My Orders</h3>
+                        <h4 class="spending">Spending insights on categories <span class="float-end last_month"><img
+                  src="assets/images/calendaricon.svg" /> Last 1 Year</span></h4>
+                        <div class="row ">
+                            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 col-12 col-sm-12">
+                                <div class="order-box d-flex">
+
+                                    <img src="assets/images/myall.svg" class="img-fluid" />
+                                    <div class="side-count-div">
+                                        <h5>1,56,899</h5>
+                                        <span>All</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 col-12 col-sm-12">
+                                <div class="order-box d-flex">
+
+                                    <img src="assets/images/myJewellery.svg" class="img-fluid" />
+                                    <div class="side-count-div">
+                                        <h5>899</h5>
+                                        <span>Jewellery</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 col-12 col-sm-12">
+                                <div class="order-box d-flex">
+
+                                    <img src="assets/images/myfashion.svg" class="img-fluid" />
+                                    <div class="side-count-div">
+                                        <h5>6,899</h5>
+                                        <span>Fashion</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 col-12 col-sm-12">
+                                <div class="order-box d-flex">
+
+                                    <img src="assets/images/mygadget.svg" class="img-fluid" />
+                                    <div class="side-count-div">
+                                        <h5>1,899</h5>
+                                        <span>Gadgets</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 col-12 col-sm-12">
+                                <div class="order-box d-flex">
+
+                                    <img src="assets/images/myorder.svg" class="img-fluid" />
+                                    <div class="side-count-div">
+                                        <h5>12,899</h5>
+                                        <span>Accessories</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="spending">Orders <span class="float-end">
+                  <div class="d-inline-block dropdown">
+                    <a class="nav-link" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img class="img-fluid " src="assets/images/funnel.svg" alt="header-image">
+                    </a>
+                    <ul class="dropdown-menu filterdrop" aria-labelledby="dropdownMenuButton1">
+
+                      <li><a class="dropdown-item">All</a></li>
+                      <li><a class="dropdown-item">Order Confirmed</a></li>
+                      <li><a class="dropdown-item">Ready for Pickup</a></li>
+                      <li><a class="dropdown-item">Picked Up</a></li>
+                      <li><a class="dropdown-item">Cancelled </a></li>
+                      <li><a class="dropdown-item">Refund</a></li>
+                    </ul>
+                  </div><img src="assets/images/calendaricon.svg" /> Last 1 month
+                </span></h4>
+                            <div class="order-box-list">
+
+                                <ul class="list-group list-group-horizontal border-0">
+                                    <li class="list-group-item border-0"><img src="assets/images/imagegift.svg" class="img-fluid" /></li>
+                                    <li class="list-group-item border-0">
+                                        <div class="inside-order-box">
+                                            <h4>Personalized Smart Touch Mood Lamp Speaker</h4>
+                                            <h6>₹2,599.00</h6>
+                                            <span>Oct 10, 2021</span>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <div class=" ps-5 ms-5 mb-3 cancel_track">
+                                    <button class="btn button-outline   w-auto mx-auto" (click)="toggleShow()">Cancel</button> <button (click)="toggleTrack()" class="btn button-full ms-2  track  w-auto mx-auto">Track</button>
+                                </div>
+                            </div>
+                            <div class="order-box-list">
+
+                                <ul class="list-group list-group-horizontal border-0">
+                                    <li class="list-group-item border-0 w-10"><img src="assets/images/imagegift.svg" class="img-fluid" />
+                                    </li>
+                                    <li class="list-group-item border-0 w-90">
+                                        <div class="inside-order-box">
+                                            <h4>Personalized Smart Touch Mood Lamp Speaker</h4>
+                                            <h6>₹2,599.00</h6>
+                                            <div class="date_status_info">
+                                                <span class="w-50 text-left">Aug 24, 2021</span>
+                                                <div class="status_informative">
+                                                    <span class="order-status w-50 text-end">
+                            <small></small>Order Confirmed</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-horizontal border-0">
+                                    <li class="list-group-item border-0 w-10"><img src="../../assets/images/image 9.png" class="img-fluid" />
+                                    </li>
+                                    <li class="list-group-item border-0 w-90">
+                                        <div class="inside-order-box">
+                                            <h4>Desk organizer Police officer gift Thin Blue Line Dock</h4>
+                                            <h6>₹1150.00</h6>
+                                            <div class="date_status_info">
+                                                <span class="w-50 text-left">Aug 24, 2021</span>
+                                                <div class="status_informative">
+                                                    <span class="order-status w-50 text-end">
+                            <span class="cancel_status"></span> Cancelled</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-horizontal border-0">
+                                    <li class="list-group-item border-0 w-10"><img src="../../assets/images/image 11.png" class="img-fluid" />
+                                    </li>
+                                    <li class="list-group-item border-0 w-90">
+                                        <div class="inside-order-box">
+                                            <h4>Silver Hindu Religious Laxmi Ganesh Kamdhenu Cow With Calf And Laddu Gopal</h4>
+                                            <h6>₹12599.00</h6>
+                                            <div class="date_status_info">
+                                                <span class="w-50 text-left">Aug 24, 2021</span>
+                                                <div class="status_informative">
+                                                    <span class="order-status w-50 text-end">
+                            <span class="refund"></span> Refund Intiated
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 form-group " *ngIf="!isShown">
+                        <div *ngIf="isTrack">
+                            <h4 class="spending">Cancel Order <span class="float-end"><i (click)="toggleShow()"
+                    class="las la-times close-order"></i></span></h4>
+                            <div class="row justify-content-center" *ngIf="isOrder">
+                                <div class="col-md-8 ">
+                                    <p class="cancel">Are you sure do you want to cancel order?</p>
+                                    <div class="mt-4 form-group text-center">
+                                        <button class="btn button btn-block w-75 mx-auto" (click)="toggleCancel()">Proceed</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center" *ngIf="!isOrder">
+
+                            <div class="col-md-7 " *ngIf="isTrack">
+                                <img src="assets/images/cancel-order.svg" class="img-fluid mb-3 center-image" />
+                                <p class="cancel">Your order has been cancelled,<br> refund process will be initiated</p>
+                                <div class="mt-4 form-group text-center">
+                                    <button class="btn button btn-block  mx-auto" (click)="toggleCancel();toggleShow()">Done</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 form-group " *ngIf="!isTrack">
+                        <h4 class="spending">Track Order <span class="float-end"><i (click)="toggleShow;toggleTrack()"
+                  class="las la-times close-order"></i></span></h4>
+                        <p class="track-p">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used.</p>
+                        <div class="row " *ngIf="isOrder">
+                            <div class="col-md-8 ">
+                                <ul id="progress">
+                                    <li>
+                                        <div class="node green"><i class="las la-check"></i></div>
+                                        <p class="green-c">Order Confirmed</p>
+                                    </li>
+                                    <li>
+                                        <div class="divider grey"></div>
+                                    </li>
+                                    <li>
+                                        <div class="node_pickup grey"></div>
+                                        <p>Order Ready for Pickup</p>
+                                    </li>
+                                    <li>
+                                        <div class="divider grey"></div>
+                                    </li>
+                                    <li>
+                                        <div class="node_devider grey"></div>
+                                        <p>Order Picked Up
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>

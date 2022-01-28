@@ -1,0 +1,188 @@
+<section class="profile-page-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <app-profilenav></app-profilenav>
+            </div>
+            <div class="col-md-8">
+                <div class="profile-shadow-box">
+                    <h3>Help</h3>
+                    <div class="row ">
+                        <mat-tab-group mat-stretch-tabs *ngIf="isShown">
+                            <mat-tab label="FAQ’s" class="col">
+                                <div class="card-body  px-0">
+                                    <mat-accordion [multi]="false">
+                                        <mat-expansion-panel hideToggle #example>
+
+                                            <mat-expansion-panel-header>
+                                                <mat-panel-title> What is Giftonn?</mat-panel-title>
+                                                <i class="las la-plus iconplus-minus" *ngIf="!example.expanded"></i>
+                                                <i class="las la-minus iconplus-minus" *ngIf="example.expanded"></i>
+
+                                            </mat-expansion-panel-header>
+                                            <mat-panel-description>
+
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                                            </mat-panel-description>
+
+                                        </mat-expansion-panel>
+                                        <mat-expansion-panel hideToggle #example2>
+
+                                            <mat-expansion-panel-header>
+                                                <mat-panel-title> What is Giftonn?</mat-panel-title>
+                                                <i class="las la-plus iconplus-minus" *ngIf="!example2.expanded"></i>
+                                                <i class="las la-minus iconplus-minus" *ngIf="example2.expanded"></i>
+
+                                            </mat-expansion-panel-header>
+                                            <mat-panel-description>
+
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                                            </mat-panel-description>
+
+                                        </mat-expansion-panel>
+                                        <mat-expansion-panel hideToggle #example3>
+
+                                            <mat-expansion-panel-header>
+                                                <mat-panel-title> Lorem Ipsum is simply dummy text of the printing and typesetting industry?
+                                                </mat-panel-title>
+                                                <i class="las la-plus iconplus-minus" *ngIf="!example3.expanded"></i>
+                                                <i class="las la-minus iconplus-minus" *ngIf="example3.expanded"></i>
+
+                                            </mat-expansion-panel-header>
+                                            <mat-panel-description>
+
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                                            </mat-panel-description>
+
+                                        </mat-expansion-panel>
+
+                                        <mat-expansion-panel hideToggle #example4>
+
+                                            <mat-expansion-panel-header>
+                                                <mat-panel-title> Lorem Ipsum is simply dummy text of the printing and typesetting industry?
+                                                </mat-panel-title>
+                                                <i class="las la-plus iconplus-minus" *ngIf="!example4.expanded"></i>
+                                                <i class="las la-minus iconplus-minus" *ngIf="example4.expanded"></i>
+
+                                            </mat-expansion-panel-header>
+                                            <mat-panel-description>
+
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                                            </mat-panel-description>
+
+                                        </mat-expansion-panel>
+
+
+                                    </mat-accordion>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Contact Support" class="col">
+                                <div class="card-body">
+                                    <div class="row help-row align-items-center justify-content-center">
+                                        <div class="col-md-6">
+                                          <div class="ladyboss_info">
+                                            <img src="assets/images/contact-support.svg" class="img-fluid profile-pic">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5 class="talk">Talk to our experts at</h5>
+                                            <h4 class="number-mb"><i class="las la-phone iconplus-minus"></i> +91 98765 43210</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="System Support" class="col">
+                                <div class="card-body">
+                                    <p class="system-support-content">Welcome to our LiveChat! Please fill in details to start the chat. There may be a delay in responses as all our Jewelry Consultants are working from home.</p>
+                                    <div class="row" id="form-row">
+
+                                        <mat-form-field class="form-group col-md-6" floatLabel="always">
+                                            <mat-label> Full Name</mat-label>
+                                            <input matInput #input type="email" placeholder="Supraj" required>
+                                        </mat-form-field>
+
+                                        <mat-form-field class="form-group col-md-6" floatLabel="always">
+                                            <mat-label>Contact Number</mat-label>
+                                            <input matInput #input type="email" placeholder="Enter contact number" required>
+                                        </mat-form-field>
+
+                                        <mat-form-field class="form-group col-md-6" floatLabel="always">
+                                            <mat-label> Email ID</mat-label>
+                                            <input matInput #input type="email" placeholder="Enter email" required>
+                                        </mat-form-field>
+
+
+                                        <mat-form-field class="form-group col-md-6" floatLabel="always">
+                                            <mat-label>Choose Department</mat-label>
+                                            <mat-select matInput #input required>
+                                                <mat-option value="one">Department 1</mat-option>
+                                                <mat-option value="two">Department 2</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+
+
+
+                                        <div class="mt-4 form-group text-center">
+                                            <button class="btn button btn-block w-50 mx-auto" (click)="toggleShow()">Start Chat</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+
+
+
+                        <div class="mt-4 form-group " *ngIf="!isShown">
+                            <h4 class="spending"> <span class="float-end"><i (click)="toggleShow()"
+                                class="las la-times close-order"></i></span></h4>
+                            <app-received-message></app-received-message>
+                            <app-sent-message></app-sent-message>
+
+                            <div class="help-icons2">
+
+                                <h2><span><img src="assets/images/profilepic.svg"></span>Giftonn Team</h2>
+                                <h6 class="pdng">May I know the reason for return, so we can work on improving our products/service/ factors that has not been up to the expectations</h6>
+                                <p class="pdng">6:25</p>
+                            </div>
+
+                            <div class="row reply">
+                                <div class="col-9 col-sm-9 reply-main">
+
+
+                                    <div class="send_textarea">
+                                        <textarea class="form-control write_message" rows="1" id="comment" placeholder="Type here...."></textarea>
+                                        <div class="icons">
+                                            <div class="help-icons">
+                                                <img src="assets/images/Path.png">
+                                            </div>
+                                            <div class="help-icons1">
+                                                <img src="assets/images/Shape.png">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>

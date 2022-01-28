@@ -1,0 +1,23 @@
+.first,.third{
+width:7%;
+}
+.second{
+    width:86%;
+}
+.notification-box h5{
+    font-size: 0.9rem;
+    color: #171E30;
+font-weight: 600;
+}
+.notification-box  p{
+font-size: 0.75rem;
+margin-bottom: 0;
+width:90%
+}
+.third{
+    text-align: end;
+}
+.notification-close{
+    font-size: 1.25rem;
+    color: #171E30;
+}

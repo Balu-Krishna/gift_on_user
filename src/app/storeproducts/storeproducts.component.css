@@ -1,0 +1,29 @@
+.cut-off-price {
+    color: #B3B4B9;
+    font-size: 0.8rem;
+}
+
+.off {
+    color: #219653;
+    font-weight: 500;
+    padding-left: 1rem;
+    font-size: 0.85rem;
+}
+
+.main-price {
+    font-size: 0.95rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.cust-count {
+    font-size: 0.8rem;
+    padding-right: 0.75rem;
+    margin-top: 0.2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.store {
+    margin-top: -55px;
+}

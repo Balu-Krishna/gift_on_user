@@ -1,0 +1,29 @@
+.bg-cover.profile-page-bg{
+    background-size: cover;
+    background-position: center;
+}
+.btn-block
+{
+   background: linear-gradient(90.84deg, #A38A55 0%, #91793F 106.23%);
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+   border-radius: 20px;
+   color:#fff;
+   font-size:16px;
+   font-weight: 600;
+}
+.congrats{
+    color: #B76E79;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+.order-confirmation{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+h4{
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}

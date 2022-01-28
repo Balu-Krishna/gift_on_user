@@ -1,0 +1,95 @@
+.offer {
+    padding: 24px 0 36px 0px;
+    background-color: #ffd3d2;
+    background-image: url(/assets/images/counter-love.svg);
+    background-repeat: no-repeat;
+    background-position-y: 210px;
+    background-attachment: scroll;
+}
+
+img.h-200 {
+    width: 100% !important;
+    height: 200px;
+}
+
+.offer .sub-heading-h3 {
+    margin-left: 44px;
+}
+
+@media (max-width: 767px) {
+    .sub-heading-h3 {
+        margin-left: 0 !important;
+    }
+}
+
+/* ::ng-deep .header-main ul .login_register {
+    display: none !important;
+} */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+    .profile-shadow-box {
+        padding: 1rem 0.5rem;
+    }
+    .seleted-filters
+    {
+        width:100% !important;
+        overflow-x: scroll !important;
+        overflow-y: hidden;
+        float: left;
+   }
+   .seleted-filters a{
+    width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        text-decoration: none;
+        margin: 10px !important;
+   }
+    .seleted-filters a {
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+        margin: 0.3rem 0.3rem;
+    }
+    .filters-ul {
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .filter-pill {
+        margin-bottom: 1rem;
+    }
+    .mat-expansion-panel-header-title {
+        font-family: "Montserrat", sans-serif !important;
+        color: #000;
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 16px;
+    }
+    ::ng-deep .more_dropdown_informative{
+        position: absolute;
+        z-index:  999999999999999999999999999999999999999999 !important;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+
+    .seleted-filters a{
+        padding: 0.3rem 12px !important;
+
+    }
+    ::ng-deep .seleted-filters{
+        margin: 0 !important;
+    }
+    .owl-carousel .owl-item img
+    {
+        width:95% !important;
+    }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .img.h-200.ng-star-inserted
+    {
+        width:95% !important;
+    }
+}

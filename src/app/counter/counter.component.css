@@ -1,0 +1,28 @@
+.counter{
+    padding: 3rem;
+    background-color: #F9B9B8;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-attachment: scroll;
+}
+.counter-icon{
+    margin-right: 1rem;
+}
+.counter-box{
+    margin-bottom: 1rem;
+}
+.counter-box h5{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.counter-box span{
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    color: hsl(226, 12%, 35%);
+
+}
+.fristspan{
+    font-size: 0.9rem; 
+    color: #000 !important;
+    font-weight: 500; 
+}

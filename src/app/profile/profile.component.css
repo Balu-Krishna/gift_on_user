@@ -1,0 +1,19 @@
+.mat-form-field-autofill-control{
+color: #000  !important;
+}
+::ng-deep .mat-form-field-required-marker
+{
+ color: red;
+}
+::ng-deep .mat-input-placeholder { 
+    color: red; /* Any color */
+ }
+ .btn-block
+ {
+    background: linear-gradient(90.84deg, #A38A55 0%, #91793F 106.23%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    color:#fff;
+    font-size:16px;
+    font-weight: 600;
+ }

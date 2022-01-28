@@ -1,0 +1,62 @@
+.login-bg{
+    background-image: url(/assets/images/banner-bg.svg);
+    background-size: contain;
+    width: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+}
+.mat-form-field {
+    display: block;
+   
+}
+mat-label{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000;
+}
+.mat-tab-label-active{
+    color: #8A6E4B;
+    font-weight: 700;
+    border-bottom:none !important;
+}
+.mat-tab-label-active .mat-ink-bar {
+    background-color: transparent !important;
+}
+.button{
+    background: linear-gradient(
+        90.84deg, #A38A55 0%, #91793F 106.23%);
+            box-shadow: 0px 4px 15px 0px #00000026;
+            display: block;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            border-radius: 2rem;
+padding: 0.5rem;
+font-weight: 600;
+}
+.button:hover{
+background: #000;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.login-text{
+    color: #8B90A0;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.social-image{
+    height: 50px;
+        margin-right: 0.5rem; 
+}
+.create{
+    font-weight: 600;
+    color: #8A6E4B;
+    text-decoration: none;
+    font-size: 0.85rem;
+}

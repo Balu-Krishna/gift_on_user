@@ -1,0 +1,16 @@
+<div class="profile-nav-box position-relative h-100">
+    <div class="profile-box-image">
+    <img src="assets/images/profilepic.svg" class="img-fluid profile-pic">
+    <a class="edit-profile">Edit <img src="assets/images/pencil.svg" /></a>
+</div>
+    <ul class="profile-menu-nav">
+        <li><a  routerLink="/profile"  [ngClass]="{'active' : router.url == '/profile'}">My Profile</a></li>
+        <li><a routerLink="/changepassword" [ngClass]="{'active' : router.url == '/changepassword'}">Change Password</a></li>
+        <li><a routerLink="/my-orders" [ngClass]="{'active' : router.url == '/my-orders'}">My Orders</a></li>
+        <li><a routerLink="/redeem" [ngClass]="{'active' : router.url == '/redeem'}">Redeem (Gions)</a></li>
+        <li><a routerLink="/notification" [ngClass]="{'active' : router.url == '/notification'}">Notifications</a></li>
+        <li><a  routerLink="/My-reminders" [ngClass]="{'active' : router.url == '/My-reminders'}" >Reminders</a></li>
+        <li><a routerLink="/payment" [ngClass]="{'active' : router.url == '/payment'}" >Manage Payment Options</a></li>
+        <li><a routerLink="/help" [ngClass]="{'active' : router.url == '/help'}">Help</a></li>
+    </ul>
+</div>

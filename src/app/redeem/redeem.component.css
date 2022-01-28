@@ -1,0 +1,76 @@
+.reward-h4{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.reward{
+    font-size: 0.75rem;
+}
+.spending span{
+
+    display: inline-block;
+    color: #505565;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+.spending {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+  }
+.order-box-list {
+    margin-bottom: 1rem;
+    border-bottom:1px solid #B3B4B9;
+}
+.w-10{
+    width: 10%;
+    padding: 0;
+}
+.w-90{
+    width: 90%;
+}
+.inside-order-box h4{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #171E30;
+}
+.inside-order-box h6{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #171E30;
+
+}
+.inside-order-box span{
+    font-size: 0.65rem;
+    color: #505565;
+    display: inline-block;
+}
+.inside-order-box {
+ padding-bottom: 1rem;
+}
+.minus{
+    color: #FC913A !important;
+    float: right;
+    background: #FFEDD1;
+    font-size: 0.8rem !important;
+    display: inline-block !important;
+    padding: 0.4rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+.last-month{
+    color: #505565bf;
+    font-weight: 600;
+    font-size: 0.8rem; 
+}
+.plus{
+    color: #00D290 !important;
+    float: right;
+    background: #D2FFF1;
+    font-size: 0.8rem !important;
+    display: inline-block !important;
+    padding: 0.4rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+}

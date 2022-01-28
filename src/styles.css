@@ -408,11 +408,10 @@ mat-label {
 }
 
 .curve-cut-half {
-    position: absolute;
-    bottom: 10%;
-    z-index: -1;
-    width: 100%;
-    left: 0;
+    background-image: url(/assets/images/sidecutcircle.svg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom; 
 }
 
 .store-content h3 {

@@ -1,7 +1,7 @@
 ::ng-deep .seleted-filters{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-right: 100px;
 }
 ::ng-deep .choose-btn{
@@ -12,7 +12,7 @@
     ::ng-deep .seleted-filters{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         margin-right: 100px;
         width: 350px !important;
         overflow-x: scroll !important;

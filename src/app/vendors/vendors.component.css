@@ -24,3 +24,12 @@
     /* opacity: 0.6; */
     z-index: -1;
   }
+  .stores {
+    background-position-y: 76px;
+    top: 100px;
+  }
+  @media only screen and (min-device-width: 220px) and (max-device-width: 920px) {
+    .stories_info img {
+      display: none;
+    }
+  }

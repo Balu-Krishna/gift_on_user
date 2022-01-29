@@ -364,7 +364,8 @@ mat-label {
     background: #fff;
     box-shadow: 0px 4px 15px rgb(0 0 0 / 15%);
     border-radius: 20px;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 25px;
+    justify-content: space-between;
     font-size: 0.9rem;
     font-weight: 500;
     margin: 0.5rem;
@@ -592,7 +593,34 @@ mat-label {
     margin: 0.5rem 1rem 0 0;
     display: inline-block;
 }
-
+.toast-success {
+    background-color: #FAEDDD !important;
+    color: #000 !important;
+  }
+/* .toast-custom {
+    background-color: purple;
+    color: black;
+}
+#toast-container > div {
+    opacity: 1;
+  }
+  .toast {
+    font-size: initial !important;
+    border: initial !important;
+    backdrop-filter: blur(0) !important;
+  }
+  .toast-success {
+    background-color: #51A351 !important;
+  }
+  .toast-error {
+    background-color: #BD362F !important;
+  }
+  .toast-info {
+    background-color: #2F96B4 !important;
+  }
+  .toast-warning {
+    background-color: #F89406 !important;
+  } */
 .filter-pill a i {
     font-size: 1rem;
     margin-left: 0.5rem;

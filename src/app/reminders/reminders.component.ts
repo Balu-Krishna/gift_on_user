@@ -15,6 +15,6 @@ export class RemindersComponent implements OnInit {
     this.isShown = ! this.isShown;
   }
   addReminder(){
-    this.notifyService.success("Reminder Added successfully !!", "");
+    this.notifyService.success("Reminder Added successfully !!", "",);
   }
 }

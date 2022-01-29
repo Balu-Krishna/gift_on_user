@@ -204,8 +204,8 @@
   }
   .testimonial-grid p{
   
-    padding-right: 0;
-    font-weight: 300;
+    /* padding-right: 0;
+    font-weight: 300; */
   }
   .view-all{
     line-height: 25px;

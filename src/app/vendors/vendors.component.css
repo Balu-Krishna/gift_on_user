@@ -17,3 +17,10 @@
     height: 70px;
     object-fit: contain;
 }
+.stories_info img {
+    /* position: absolute; */
+    position: absolute;
+    margin-top: 330px;
+    /* opacity: 0.6; */
+    z-index: -1;
+  }

@@ -18,7 +18,15 @@
 .navbar-expand-lg .navbar-nav {
   justify-content: center;
 }
-
+.nav-item a:hover{
+  color: #8a6e4b;
+  cursor: pointer;
+  font-weight: bold;
+}
+.img-fluid:hover{
+  color: #8a6e4b;
+  cursor: pointer;
+}
 .border-bottom {
   border-bottom: none !important;
 }

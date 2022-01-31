@@ -8,8 +8,16 @@
     position: absolute;
     left: -10px;
     top: -10px;
-    opacity: 0.6;
-    z-index: -1;
+    /* opacity: 0.6; */
+    /* z-index: -1; */
+    width: 110px;
+    height: 250px;
+  }
+  .bottom_bellon img {
+    position: absolute;
+    right: 0;
+    height: 159px;
+    bottom: 40%;
   }
 .newsub-heading-h3 {
     font-size: 1.6rem !important;

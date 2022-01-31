@@ -106,7 +106,9 @@ p {
     background: red;
     margin-right: 6px;
 }
-
+.button-full:hover{
+    background: #000;
+}
 .date_status_info {
     display: flex;
     align-items: center;

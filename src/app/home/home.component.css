@@ -135,6 +135,18 @@
 .owl-theme .owl-nav {
   text-align: left;
 }
+.gift-now:hover{
+  color:#000;
+  cursor: pointer;
+}
+.view-all:hover{
+
+color:#000;
+  cursor: pointer;
+}
+.right-arrow:hover{
+  color:#000;
+}
 ::ng-deep #overlay_inforamtive {
   position: relative;
 }

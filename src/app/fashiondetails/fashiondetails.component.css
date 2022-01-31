@@ -272,7 +272,9 @@ ul {
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
     border-radius: 24px;
 }
-
+.button-full:hover{
+    background: #000;
+}
 .button-full {
 
     font-size: 16px;

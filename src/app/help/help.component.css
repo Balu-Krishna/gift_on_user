@@ -15,7 +15,9 @@ mat-expansion-panel-header .mat-expansion-indicator::after {
 .mat-expansion-panel-header.mat-expanded .mat-expansion-indicator::after {
     content: "-";
 }
-
+.btn-block:hover{
+    background: #000;
+}
 .help-row {
     min-height: 200px;
 }

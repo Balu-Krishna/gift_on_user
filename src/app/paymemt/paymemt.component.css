@@ -16,6 +16,9 @@
      
         text-transform: uppercase;
     }
+    .btn-block:hover{
+      background: #000;
+    }
     .underline{
         height:5px;
         border-bottom: 1px dashed #D1D1D3

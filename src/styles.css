@@ -25,7 +25,9 @@ body {
     width: 100%;
     height: 100%;
 }
-
+/* .button:hover{
+    background: #000;
+    } */
 body {
     font-family: "Montserrat", sans-serif !important;
     box-sizing: border-box;
@@ -428,8 +430,15 @@ mat-label {
     line-height: 20px;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    cursor: pointer;
 }
-
+.store-content h3:hover{
+    color: #000;
+}
+.product-box h4:hover{
+    color: #000;
+    cursor: pointer;
+}
 .location-bg {
     background-image: url(/assets/images/banner-bg.svg) !important;
     background-size: auto;
@@ -578,7 +587,9 @@ mat-label {
     display: inline-block;
     margin-left: 0.5rem;
 }
-
+.view-all:hover{
+    color: #000;
+}
 .filters-ul .dropdown-toggle::after {
     display: none;
 }
@@ -594,8 +605,8 @@ mat-label {
     display: inline-block;
 }
 .toast-success {
-    background-color: #FAEDDD !important;
-    color: #000 !important;
+    background-color: #8a6e4b !important;
+    color: rgb(255, 254, 254) !important;
   }
 /* .toast-custom {
     background-color: purple;
@@ -977,6 +988,12 @@ mat-label {
     .testimonimal-banner .owl-prev {
         right: 9%;
         left: auto;
+    }
+    .seleted-filters a{
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+        margin: 0.3rem 0.3rem;
+        justify-content: none;
     }
     .product-image{
       width: 100% !important;

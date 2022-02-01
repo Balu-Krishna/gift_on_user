@@ -1,6 +1,6 @@
     .wishlist {
-        background-image: url(/assets/images/banner-bg.svg);
-        padding: 2rem;
+        /* background-image: url(/assets/images/banner-bg.svg); */
+        padding: 2rem 8rem;
         background-size: contain;
         background-position: top center;
         background-repeat: no-repeat;

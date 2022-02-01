@@ -23,6 +23,11 @@
   cursor: pointer;
   font-weight: bold;
 }
+.nav-item a span:hover{
+  color: #8a6e4b;
+  font-weight: bold;
+
+}
 .img-fluid:hover{
   color: #8a6e4b;
   cursor: pointer;

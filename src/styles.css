@@ -113,7 +113,7 @@ a:hover {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: -1;
 }
 
 .deafult-page-bg::before {
@@ -129,6 +129,58 @@ a:hover {
     z-index: -2;
 }
 
+
+.page-bg::after {
+    content: "";
+    background-image: url(./assets/images/Ellipse628.png);
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 90%;
+    height: 90%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.page-bg::before {
+    content: "";
+    background-image: url(./assets/images/Group19440.png);
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom 5px right 7px;
+    z-index: -2;
+}
+.profile-page-bg::after {
+
+
+    content: "";
+
+    background-image: url(./assets/images/Ellipse628.png);
+
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 90%;
+    height: 90%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.profile-page-bg::before {
+    content: "";
+    background-image: url(./assets/images/Group19440.png);
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom 5px right 7px;
+    z-index: -2;
+}
 .sidecut-banner {
     background-image: url(/assets/images/sidecutcircle.svg);
     background-repeat: no-repeat;
@@ -320,8 +372,8 @@ mat-label {
 }
 
 .profile-page-bg {
-    background-image: url(/assets/images/banner-bg.svg);
-    padding: 3rem;
+    /* background-image: url(/assets/images/banner-bg.svg); */
+    padding: 3rem 8rem;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -989,6 +1041,18 @@ mat-label {
     .testimonimal-banner .owl-prev {
         right: 9%;
         left: auto;
+    }
+    .page-bg::after{
+        display: none;
+    }
+    .page-bg::before{
+        display: none;
+    }
+    .profile-page-bg::after{
+        display: none !important;
+    }
+    .profile-page-bg::before{
+        display: none;
     }
     .seleted-filters a{
         padding: 0.3rem 1rem;

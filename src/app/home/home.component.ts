@@ -129,6 +129,34 @@ export class HomeComponent implements OnInit {
       name: 'Josh',
       designation: 'cardiac surgeon',
     },
+    {
+      img: 'assets/images/Ellipse.svg',
+      content:
+        '1“ Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown”499',
+      name: 'Dr. Suresh Madivada',
+      designation: 'Private Employee',
+    },
+    {
+      img: 'assets/images/Ellipse.svg',
+      content:
+        '1“ Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown”499',
+      name: 'Josh',
+      designation: 'cardiac surgeon',
+    },
+    {
+      img: 'assets/images/Ellipse.svg',
+      content:
+        '1“ Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown”499',
+      name: 'Dr. Suresh Madivada',
+      designation: 'Private Employee',
+    },
+    {
+      img: 'assets/images/Ellipse.svg',
+      content:
+        '1“ Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown”499',
+      name: 'Josh',
+      designation: 'cardiac surgeon',
+    },
   ];
   Products = [
     {
@@ -182,10 +210,10 @@ export class HomeComponent implements OnInit {
     ],
     responsive: {
       0: {
-        items: 1,
+        items: 0.5,
       },
       400: {
-        items: 1,
+        items: 1.3,
       },
       760: {
         items: 1.5,

@@ -18,7 +18,25 @@
 .navbar-expand-lg .navbar-nav {
   justify-content: center;
 }
+.nav-item a:hover{
+  color: #8a6e4b;
+  cursor: pointer;
+  font-weight: bold;
+}
+.nav-item a span:hover{
+  color: #8a6e4b;
+  font-weight: bold;
 
+}
+.img-fluid:hover{
+  color: #8a6e4b;
+  cursor: pointer;
+}
+.gender-drop a p:hover{
+  color: #8a6e4b;
+  cursor: pointer;
+  font-weight: bold;
+}
 .border-bottom {
   border-bottom: none !important;
 }
@@ -216,8 +234,51 @@
   }
 
 }
+@media (min-width: 920px) and (max-width: 1260px) {
+  .tab-block {
+    display: block !important;
+  }
+  .tab-block .tab-location {
+    display: block !important;
+    margin-bottom: 0.5rem;
+  }
+  .tab-block .nav-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .navbar-toggler {
+    color: #fff;
+    background: linear-gradient(90.84deg, #a38a55 0%, #91793f 106.23%);
+  }
+  .navbar-toggler-icon {
+    font-size: 2.5rem;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+  .navbar {
+    border-top: none !important;
+    border-bottom: 1px solid #90959bb3;
+    padding: 10px;
+  }
+  .left-header-menu {
+    padding-left: 0;
+  }
+  ::ng-deep .live_location {
+    position: absolute;
+    right: 122px;
+    /* top: 95px; */
+    z-index: 99999999999999999999999;
+  }
+  ::ng-deep .user_informative{
+    top: 21px !important;
+    right: 0 !important;
+    position: absolute;
+  }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+}
+
+/* @media (min-width: 992px) and (max-width: 1100px) {
   .navbar {
     background-color: #fff !important;
   }
@@ -232,7 +293,7 @@
     justify-content: start;
   }
 
-}
+} */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
   .header-main {

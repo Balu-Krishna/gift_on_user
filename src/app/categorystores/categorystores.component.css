@@ -1,23 +1,21 @@
-.offer {
-    padding: 24px 0 36px 0px;
-    background-color: #ffd3d2;
+.offer{
+    padding:0.5rem;
+    background-color:#ffd3d2;
     background-image: url(/assets/images/counter-love.svg);
     background-repeat: no-repeat;
-    background-position-y: 210px;
+    background-position-y: 100px;
     background-attachment: scroll;
 }
-
 img.h-200 {
-    width: 100% !important;
-    height: 200px;
+    width: 98% ;
+    height: 230px !important;
 }
 
-.offer .sub-heading-h3 {
-    margin-left: 44px;
-}
-
-@media (max-width: 767px) {
-    .sub-heading-h3 {
+.offer .sub-heading-h3{
+    margin-left: 12px;
+ }
+@media (max-width:767px) {
+    .sub-heading-h3{
         margin-left: 0 !important;
     }
 }
@@ -41,7 +39,7 @@ img.h-200 {
     width: 100px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         height: 36px;
         text-decoration: none;
         margin: 10px !important;

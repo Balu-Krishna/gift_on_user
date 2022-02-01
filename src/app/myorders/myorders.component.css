@@ -97,7 +97,10 @@ p {
     background: green;
     margin-right: 6px;
 }
-
+.cancelled{
+    position: absolute;
+    left: 80%;
+}
 .order-status .cancel_status {
     display: inline-block;
     width: 0.5rem;
@@ -106,7 +109,9 @@ p {
     background: red;
     margin-right: 6px;
 }
-
+.button-full:hover{
+    background: #000;
+}
 .date_status_info {
     display: flex;
     align-items: center;

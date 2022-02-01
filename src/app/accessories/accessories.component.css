@@ -1,21 +1,25 @@
 
 .offer{
     padding:0.5rem;
-    background-color: #F9B9B8;
+    background-color:#ffd3d2;
     background-image: url(/assets/images/counter-love.svg);
     background-repeat: no-repeat;
     background-position-y: 100px;
     background-attachment: scroll;
 }
-
+img.h-200 {
+    width: 98% ;
+    height: 230px;
+}
 
 .offer .sub-heading-h3{
-    margin-left: 44px;
+    margin-left: 12px;
  }
 @media (max-width:767px) {
     .sub-heading-h3{
         margin-left: 0 !important;
     }
+
     .accessories_svg svg{
         width: 100%;
     }

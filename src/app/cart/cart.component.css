@@ -1,11 +1,17 @@
     .wishlist {
-        background-image: url(/assets/images/banner-bg.svg);
-        padding: 2rem;
+        /* background-image: url(/assets/images/banner-bg.svg); */
+        padding: 2rem 8rem;
         background-size: contain;
         background-position: top center;
         background-repeat: no-repeat;
     }
-    
+    .btn-wish:hover{
+        background: #000;
+    }
+    .side-second h3:hover{
+        color: #000;
+        cursor: pointer;
+    }
     .wishlist-box,
     .side-box,
     .side-box-cart {

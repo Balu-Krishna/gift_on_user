@@ -1,10 +1,10 @@
-.wishlist {
-    background-image: url(/assets/images/banner-bg.svg);
-    padding: 2rem;
+ .wishlist {
+    /* background-image: url(/assets/images/banner-bg.svg); */
+    padding: 2rem 8rem;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
-}
+} 
 
 .wishlist-box,
 .side-box {
@@ -44,12 +44,18 @@
     vertical-align: top;
     text-align: right;
 }
+.btn-wish:hover{
+    background: #000;
+}
 
 .wishlist-box .ratting-count span {
     font-size: 0.8rem;
     font-weight: 500;
 }
-
+.side-second h3:hover{
+    color: #000;
+    cursor: pointer;
+}
 .wishlist-box .ratting-count i {
     color: #FFA001;
     font-size: 0.9rem;

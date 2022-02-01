@@ -244,8 +244,13 @@
   font-weight: 600;
   filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.15));
   border-radius: 24px;
+  cursor: pointer;
 }
+.button-full:hover {
+  background: #000 !important;
+ 
 
+}
 .button-full {
   font-size: 16px;
   font-weight: 600;
@@ -253,6 +258,7 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   color: #f9fbfe;
+  cursor: pointer;
 }
 .review-content small,
 .date {

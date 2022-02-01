@@ -25,7 +25,9 @@ body {
     width: 100%;
     height: 100%;
 }
-
+/* .button:hover{
+    background: #000;
+    } */
 body {
     font-family: "Montserrat", sans-serif !important;
     box-sizing: border-box;
@@ -50,7 +52,7 @@ a:focus {
 }
 
 .deafult-page-bg {
-    background: linear-gradient(180deg, #fbf1f0 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #faf0ee 0%, rgba(255, 255, 255, 0) 100%);
     position: relative;
     padding: 4rem;
 }
@@ -111,7 +113,7 @@ a:hover {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    z-index: -2;
+    z-index: -1;
 }
 
 .deafult-page-bg::before {
@@ -127,6 +129,58 @@ a:hover {
     z-index: -2;
 }
 
+
+.page-bg::after {
+    content: "";
+    background-image: url(./assets/images/Ellipse628.png);
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 90%;
+    height: 90%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.page-bg::before {
+    content: "";
+    background-image: url(./assets/images/Group19440.png);
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom 5px right 7px;
+    z-index: -2;
+}
+.profile-page-bg::after {
+
+
+    content: "";
+
+    background-image: url(./assets/images/Ellipse628.png);
+
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 90%;
+    height: 90%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.profile-page-bg::before {
+    content: "";
+    background-image: url(./assets/images/Group19440.png);
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom 5px right 7px;
+    z-index: -2;
+}
 .sidecut-banner {
     background-image: url(/assets/images/sidecutcircle.svg);
     background-repeat: no-repeat;
@@ -318,8 +372,8 @@ mat-label {
 }
 
 .profile-page-bg {
-    background-image: url(/assets/images/banner-bg.svg);
-    padding: 3rem;
+    /* background-image: url(/assets/images/banner-bg.svg); */
+    padding: 3rem 8rem;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -364,7 +418,8 @@ mat-label {
     background: #fff;
     box-shadow: 0px 4px 15px rgb(0 0 0 / 15%);
     border-radius: 20px;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 20px;
+    justify-content: space-between;
     font-size: 0.9rem;
     font-weight: 500;
     margin: 0.5rem;
@@ -408,11 +463,10 @@ mat-label {
 }
 
 .curve-cut-half {
-    position: absolute;
-    bottom: 10%;
-    z-index: -1;
-    width: 100%;
-    left: 0;
+    background-image: url(/assets/images/sidecutcircle.svg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom; 
 }
 
 .store-content h3 {
@@ -428,8 +482,15 @@ mat-label {
     line-height: 20px;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    cursor: pointer;
 }
-
+.store-content h3:hover{
+    color: #000;
+}
+.product-box h4:hover{
+    color: #000;
+    cursor: pointer;
+}
 .location-bg {
     background-image: url(/assets/images/banner-bg.svg) !important;
     background-size: auto;
@@ -465,6 +526,7 @@ mat-label {
     font-size: 0.8rem;
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .view-all i {
@@ -578,7 +640,9 @@ mat-label {
     display: inline-block;
     margin-left: 0.5rem;
 }
-
+.view-all:hover{
+    color: #000;
+}
 .filters-ul .dropdown-toggle::after {
     display: none;
 }
@@ -593,7 +657,34 @@ mat-label {
     margin: 0.5rem 1rem 0 0;
     display: inline-block;
 }
-
+.toast-success {
+    background-color: #8a6e4b !important;
+    color: rgb(255, 254, 254) !important;
+  }
+/* .toast-custom {
+    background-color: purple;
+    color: black;
+}
+#toast-container > div {
+    opacity: 1;
+  }
+  .toast {
+    font-size: initial !important;
+    border: initial !important;
+    backdrop-filter: blur(0) !important;
+  }
+  .toast-success {
+    background-color: #51A351 !important;
+  }
+  .toast-error {
+    background-color: #BD362F !important;
+  }
+  .toast-info {
+    background-color: #2F96B4 !important;
+  }
+  .toast-warning {
+    background-color: #F89406 !important;
+  } */
 .filter-pill a i {
     font-size: 1rem;
     margin-left: 0.5rem;
@@ -950,6 +1041,24 @@ mat-label {
     .testimonimal-banner .owl-prev {
         right: 9%;
         left: auto;
+    }
+    .page-bg::after{
+        display: none;
+    }
+    .page-bg::before{
+        display: none;
+    }
+    .profile-page-bg::after{
+        display: none !important;
+    }
+    .profile-page-bg::before{
+        display: none;
+    }
+    .seleted-filters a{
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+        margin: 0.3rem 0.3rem;
+        justify-content: none;
     }
     .product-image{
       width: 100% !important;

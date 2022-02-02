@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SidebarModule } from 'ng-sidebar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MatTabsModule} from '@angular/material/tabs';
@@ -93,6 +94,7 @@ import { SentMessageComponent } from './help/sent-message/sent-message.component
   ],
   imports: [
     BrowserModule,
+    SidebarModule.forRoot(),
     SlickCarouselModule,
     AppRoutingModule,
     BrowserAnimationsModule,

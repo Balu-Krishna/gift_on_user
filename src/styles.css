@@ -154,6 +154,11 @@ a:hover {
     background-position: bottom 5px right 7px;
     z-index: -2;
 }
+
+  .ng-sidebar__content.ng-sidebar__content--animate {
+    position: static !important;
+  }
+  
 .profile-page-bg::after {
 
 

@@ -110,3 +110,121 @@
         float: right;
         font-weight: 500;
     }
+
+
+    .profile-nav-box{
+      background: #FAFAFA;
+  
+      border-radius:1rem;
+      position: static !important;
+      box-shadow: 0px 0px 8px 0px #0000000F;
+  }
+  .profile-pic{
+      display: block;
+      margin: 1rem auto;
+  }
+  .profile-menu-nav{
+      list-style: none;
+      padding-inline-start: 0px;
+      position: static !important;
+  }
+  .ng-sidebar__content[_ngcontent-ree-c11]{
+    position: static !important;
+  }
+  .ng-sidebar__content.ng-sidebar__content--animate {
+    position: static !important;
+  }
+  
+
+  .profile-box-image{
+      padding: 2rem;
+  }
+  .edit-profile{
+      font-size: 0.825rem;
+      text-align: center;
+      display: block;
+      font-weight: 600;
+      color: var(--main);
+      margin-top: 0.5rem;
+      text-decoration: none;
+  }
+  .edit-profile img{
+      height: 13px;
+      position: relative;
+      top: -2px;
+      margin-left: 0.25rem;
+  }
+  .profile-menu-nav a{
+      color: #505565;
+      display: block;
+      padding:0.75rem 1rem 0.5rem 3rem;
+      text-decoration: none;
+      font-weight: 500;
+      /* position: relative; */
+  }
+  .profile-menu-nav a.active,.profile-menu-nav a:hover{
+  background: #FAEDDD;
+  color: #8A6E4B;
+  font-weight: 600;
+  text-decoration: none;
+  }
+  .profile-menu-nav a.active::after{
+  content: '';
+  /* position: absolute; */
+  top: 0;
+  left:0;
+  width: 4px;
+  height: 100%;
+  background: #8A6E4B;
+  }
+  /* .ng-sidebar__content.ng-sidebar__content--animate {
+    position:relative !important;
+    overflow: auto;
+}
+.ng-sidebar__content[_ngcontent-llo-c11]{
+  position: relative;
+} */
+/* .ng-sidebar-content{
+  position: static!important;
+
+} */
+  .profile-menu-nav a.active::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: 100%;
+      height: 100%;
+      background-image: url(/assets/images/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center right;
+      }
+  @media (min-width: 768px) and (orientation:portrait) {
+    
+      .profile-menu-nav a{
+          font-size: 0.9rem;
+          padding-left: 1rem !important;
+      }
+      .profile-box-image{
+          padding: 0.75rem;
+      }
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+      .profile-box-image{
+          padding: 0.5rem;
+      }
+      .profile-nav-box{
+          margin-bottom: 1rem;
+          height: auto !important;
+      }
+      .profile-menu-nav{
+          list-style: none;
+          padding-inline-start: 0px;
+          white-space: nowrap;
+          /* display: flex; */
+          overflow: auto;
+      }
+  }
+  @media only screen and (max-width: 320px) {
+  
+  }

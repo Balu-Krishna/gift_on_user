@@ -32,6 +32,7 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { GadgetsComponent } from './gadgets/gadgets.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
+import { ProfilenavComponent } from './profilenav/profilenav.component';
 const routes: Routes = [
   {
     path:  '',
@@ -125,6 +126,8 @@ const routes: Routes = [
     path:  'products-details',
     component:ProductdetailsComponent
   },
+ 
+   
     {
     path:  'wishlist',
     component:WhishlistComponent

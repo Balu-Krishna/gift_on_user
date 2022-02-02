@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-paymemt',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./paymemt.component.css']
 })
 export class PaymemtComponent implements OnInit {
-
-  constructor() { }
+  _opened: boolean = false;
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
+  }
+  
+  _toggleSidebar() {
+    this._opened = !this._opened;
   }
 
 }

@@ -21,7 +21,33 @@
                       
     
 
-<div class="mt-4 form-group text-center">
+<div class="mt-4 form-group">
+
+       <!-- Container for sidebar(s) + page content -->
+    <ng-sidebar-container>
+   <!-- Page content -->
+   <!-- <div ng-sidebar-content>
+    <button (click)="_toggleSidebar()">Toggle sidebar</button>
+  </div> -->
+        <!-- A sidebar -->
+        <ng-sidebar [(opened)]="_opened">
+          <p>Sidebar contents</p>
+        </ng-sidebar>
+<div class="profile-nav-box position-relative" ng-sidebar-content>
+<ul class="profile-menu-nav">
+        <li><a (click)="_toggleSidebar()">Credit/Debit Cards</a></li>
+        <li><a (click)="_toggleSidebar()" >Wallets</a></li>
+        <li><a (click)="_toggleSidebar()" >UPI</a></li>
+        <li><a (click)="_toggleSidebar()">Net Banking</a></li>
+        
+    </ul>
+</div>
+
+   
+      </ng-sidebar-container>
+
+     
+
 <button class="btn button btn-block w-50 mx-auto"  routerLink="/order-confirmation" > Pay &#8377; 29,198</button>
 </div>
 </div>

@@ -1,0 +1,102 @@
+.spending {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.add-card{
+    color:#91793F ;
+}
+.occasion-date{
+    color:#91793F ;
+    font-weight: 600;
+}
+.third {
+    width: 7%;
+    margin-top: -50px;
+}
+.dlt {
+    width: 7%;
+    margin-left: 15px;
+}
+.first{
+    width: 4%;
+}
+.second h6{
+    font-size: 12px;
+    font-weight: bold;
+
+}
+.second {
+    width: 86%;
+    margin-left: 25px;
+}
+.second p {
+    font-size: 12px;
+}
+.third img{
+     margin-left: 22px; 
+   
+}
+.dlt  img {
+    margin-left: 18px; 
+}
+.occasion-reminder.second {
+    width: 50%;
+}
+.occasion-reminder.third {
+    width: 36%;
+}
+.occasion-reminder.dlt{
+    width: 34%;
+}
+.first img {
+    vertical-align: text-top;
+    height: 15px;
+ margin-top: -28px;
+    
+}
+.upi-id img {
+    vertical-align: text-top;
+    height: 15px;
+ /* margin-top: 20px; */
+}
+.notification-box h5 {
+    font-size: 0.9rem;
+    color: #171e30;
+    font-weight: 600;
+}
+/* .notification-box p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+} */
+.date{
+    font-weight: bold;
+    font-size: 12px;
+} 
+
+.mat-form-field-autofill-control{
+
+    color: #000  !important;
+    
+    }
+    ::ng-deep .mat-form-field-required-marker
+    {
+     color: red;
+    }
+    ::ng-deep .mat-input-placeholder { 
+        color: red; /* Any color */
+     }
+     .btn-block
+     {
+        background: linear-gradient(90.84deg, #A38A55 0%, #91793F 106.23%);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        color:#fff;
+        font-size:16px;
+        font-weight: 600;
+     }
+     .btn-block:hover{
+        background: #000;
+     }
+
+

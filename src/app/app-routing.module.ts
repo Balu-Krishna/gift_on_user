@@ -33,6 +33,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { GadgetsComponent } from './gadgets/gadgets.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { ProfilenavComponent } from './profilenav/profilenav.component';
+import { PaymemtOptionsComponent } from './paymemt-options/paymemt-options.component';
 const routes: Routes = [
   {
     path:  '',
@@ -127,7 +128,10 @@ const routes: Routes = [
     component:ProductdetailsComponent
   },
  
-   
+   {
+     path: 'paymemtoptions',
+     component:PaymemtOptionsComponent
+   },
     {
     path:  'wishlist',
     component:WhishlistComponent

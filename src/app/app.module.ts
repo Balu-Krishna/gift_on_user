@@ -50,6 +50,7 @@ import { AccessoriesComponent } from './accessories/accessories.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReceivedMessageComponent } from './help/received-message/received-message.component';
 import { SentMessageComponent } from './help/sent-message/sent-message.component';
+import { PaymemtOptionsComponent } from './paymemt-options/paymemt-options.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -91,6 +92,7 @@ import { SentMessageComponent } from './help/sent-message/sent-message.component
     AccessoriesComponent,
     ReceivedMessageComponent,
     SentMessageComponent,
+    PaymemtOptionsComponent,
   ],
   imports: [
     BrowserModule,

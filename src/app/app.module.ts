@@ -51,6 +51,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReceivedMessageComponent } from './help/received-message/received-message.component';
 import { SentMessageComponent } from './help/sent-message/sent-message.component';
 import { PaymemtOptionsComponent } from './paymemt-options/paymemt-options.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -97,6 +99,7 @@ import { PaymemtOptionsComponent } from './paymemt-options/paymemt-options.compo
   imports: [
     BrowserModule,
     SidebarModule.forRoot(),
+  
     SlickCarouselModule,
     AppRoutingModule,
     BrowserAnimationsModule,

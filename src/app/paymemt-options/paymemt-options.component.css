@@ -5,6 +5,10 @@
 }
 .add-card{
     color:#91793F ;
+    cursor: pointer;
+}
+.add-card:hover{
+color: #000;
 }
 .occasion-date{
     color:#91793F ;
@@ -44,16 +48,44 @@
     width: 50%;
 }
 .occasion-reminder.third {
-    width: 36%;
+    width: 42%;
 }
 .occasion-reminder.dlt{
-    width: 34%;
+    width: 40%;
 }
 .first img {
     vertical-align: text-top;
     height: 15px;
  margin-top: -28px;
     
+}
+.add-bank1 h5{
+    padding-top: 10px;  
+}
+.add-bank img{
+    margin-left: 40px;
+ 
+}
+.occasion-date:hover{
+    color: #000;
+    cursor: pointer;
+}
+.net-bank{
+    margin-bottom: 20px;
+}
+
+.all-bank p{
+    font-family:'Montserrat';
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 17px;
+    letter-spacing: -0.1875px;
+  
+}
+.add-bank h5{
+    padding-top: 10px;
+    margin-left: 40px;  
 }
 .upi-id img {
     vertical-align: text-top;
@@ -98,5 +130,15 @@
      .btn-block:hover{
         background: #000;
      }
+     @media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+  
+        .add-bank img{
+            margin-left: 9px;
+        }
+        .add-bank h5{
+            padding-top: 10px;
+            margin-left: 9px;  
+        }
+    }
 
 

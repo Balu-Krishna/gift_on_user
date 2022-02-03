@@ -6,18 +6,48 @@
               </div>
               <div class="col-md-8">
                 <div class="profile-shadow-box">
-                    <div *ngIf="isAddcard">
+
+                    <div *ngIf="tab === ''">
 
                     
                     <h3>Payment Option</h3>
-             <h4 class="spending">Credit/Dedit Saved cards<span class="float-end add-card" (click)="toggleAddcard()">Add New Card</span></h4> 
+             <h4 class="spending">Credit/Dedit Saved cards<span class="float-end add-card" (click)="toggleWidget('card')">Add New Card</span></h4> 
            
              <div class="notification-box mb-4 d-flex align-items-center border-bottom pb-3">
                 <div class="first">
-                    <img src="assets/images/image 12.png">
+                    <img src="assets/images/image 14.png">
                 </div>
                 <div class="second occasion-reminder">
                     <h5> ICICI Bank Debit Card ***1246</h5>
+                    <h6>Sai Krishna</h6>
+                    <p>Expires  <span class="date">02/22</span></p>
+                </div>
+                <div class="third occasion-reminder  text-end">
+                    <span class="occasion-date">Make Default</span>    <img src="assets/images/Vector.png" class="mw-2 text-end"> 
+                </div>
+            </div>
+
+            <div class="notification-box mb-4 d-flex align-items-center border-bottom pb-3">
+                <div class="first">
+                    <img src="assets/images/image 13.png">
+                </div>
+                <div class="second occasion-reminder">
+                    <h5>IDBI Bank Debit Card ***2356</h5>
+                    <h6>Sai Krishna</h6>
+                    <p>Expires  <span class="date">02/22</span></p>
+                </div>
+                <div class="third occasion-reminder  text-end">
+                      <img src="assets/images/Vector.png" class="mw-2 text-end"> 
+                </div>
+            </div>
+
+
+            <div class="notification-box mb-4 d-flex align-items-center border-bottom pb-3">
+                <div class="first">
+                    <img src="assets/images/image 14.png">
+                </div>
+                <div class="second occasion-reminder">
+                    <h5>HDFC Bank Credit Card ***8956</h5>
                     <h6>Sai Krishna</h6>
                     <p>Expires  <span class="date">02/22</span></p>
                 </div>
@@ -36,35 +66,6 @@
                     <p>Expires  <span class="date">02/22</span></p>
                 </div>
                 <div class="third occasion-reminder  text-end">
-                      <img src="assets/images/Vector.png" class="mw-2 text-end"> 
-                </div>
-            </div>
-
-
-            <div class="notification-box mb-4 d-flex align-items-center border-bottom pb-3">
-                <div class="first">
-                    <img src="assets/images/image 14.png">
-                </div>
-                <div class="second occasion-reminder">
-                    <h5> ICICI Bank Debit Card ***1246</h5>
-                    <h6>Sai Krishna</h6>
-                    <p>Expires  <span class="date">02/22</span></p>
-                </div>
-                <div class="third occasion-reminder  text-end">
-                    <span class="occasion-date">Make Default</span>    <img src="assets/images/Vector.png" class="mw-2 text-end"> 
-                </div>
-            </div>
-
-            <div class="notification-box mb-4 d-flex align-items-center border-bottom pb-3">
-                <div class="first">
-                    <img src="assets/images/image 12.png">
-                </div>
-                <div class="second occasion-reminder">
-                    <h5> ICICI Bank Debit Card ***1246</h5>
-                    <h6>Sai Krishna</h6>
-                    <p>Expires  <span class="date">02/22</span></p>
-                </div>
-                <div class="third occasion-reminder  text-end">
                     <span class="occasion-date">Make Default</span>    <img src="assets/images/Vector.png" class="mw-2 text-end"> 
                 </div>
             </div>
@@ -83,7 +84,7 @@
                 </div>
             </div>
 
-            <h4 class="spending">UPI IDs<span class="float-end add-card" (click)="toggleAddupi()">Add UPI ID</span></h4> 
+            <h4 class="spending">UPI IDs<span class="float-end add-card" (click)="toggleWidget('upi')">Add UPI ID</span></h4> 
             
             <div class="notification-box mb-4 d-flex align-items-center  pb-3">
             <div class="upi-id">
@@ -111,7 +112,7 @@
               </div>
                 </div>
 
-                <h4 class="spending">Net Banking<span class="float-end add-card" (click)="toggleAddbank()">Add Bank</span></h4> 
+                <h4 class="spending">Net Banking<span class="float-end add-card" (click)="toggleWidget('bank')">Add Bank</span></h4> 
                 <div class="notification-box mb-4 d-flex align-items-center  pb-3">
                     <div class="net-bank">
                         <img src="assets/images/pay2.png">
@@ -139,40 +140,143 @@
                         </div>
                     </div>
 
-                        <div class="mt-4 form-group " *ngIf="!isAddcard">
-                              
-                         
-
+                        <div class="mt-4 form-group " *ngIf="tab === 'card'">
                           
-                            <h3>Add Credit/Debit Card<span class="float-end"><i (click)="toggleAddcard()"
+                                <h3>Add Credit/Debit Card<span class="float-end"><i (click)="toggleWidget('')"
                                 class="las la-times close-order"></i></span></h3>
                             <div class="row ">
                   
                               <mat-form-field class="form-group col-md-6" floatLabel="always">
                                 <mat-label> Card Number</mat-label>
-                                <input matInput #input type="email" placeholder="**** **** **** ****" required>
+                                <input matInput #input  placeholder="**** **** **** ****" required>
                               </mat-form-field>
                               <mat-form-field class="form-group col-md-6" floatLabel="always">
                                 <mat-label> Expiry date</mat-label>
-                                <input matInput #input type="email" placeholder="MM/YY" required>
+                                <input matInput #input  placeholder="MM/YY" required>
                               </mat-form-field>
-                               <mat-form-field class="form-group col-md-6" floatLabel="always">
-                                <mat-label> CVV</mat-label>
-                                <input matInput #input type="email" placeholder="Enter CVV" required>
+                              <mat-form-field class="form-group col-md-6" floatLabel="always">
+                                <mat-label>CVV</mat-label>
+                                <input matInput placeholder="Enter CVV">
+                                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                                <mat-icon matSuffix>error_outline</mat-icon>
                               </mat-form-field>
                               <mat-form-field class="form-group col-md-6" floatLabel="always">
                                 <mat-label> Name on card</mat-label>
-                                <input matInput #input type="email" placeholder="Enter name as mentioned on card" required>
+                                <input matInput #input  placeholder="Enter name as mentioned on card" required>
                               </mat-form-field>
                   
                               <div class="mt-4 form-group text-center">
-                                <button class="btn button btn-block w-50 mx-auto">Add Card</button>
+                                <button class="btn button btn-block w-50 mx-auto"(click)="toggleWidget('');addCard()">Add Card</button>
                               </div>
                             </div>
                          </div>
 
-                      
-                     
+                      <div  class="mt-4 form-group"  *ngIf="tab === 'upi'">
+
+                        <h3>Add UPI ID<span class="float-end"><i (click)="toggleWidget('')"
+                            class="las la-times close-order"></i></span></h3>
+
+                            <mat-form-field class="form-group your-upi-id col-md-12" floatLabel="always">
+                                <mat-label> YOUR UPI ID</mat-label>
+                                <input matInput #input  placeholder="Enter Your UPI ID" required>
+                              </mat-form-field>
+
+                            
+
+                              <div class="mt-4 form-group text-center">
+                                <button class="btn button btn-block w-50 mx-auto"(click)="toggleWidget('');addUpiId()">Add UPI ID</button>
+                              </div>
+                         </div>
+
+                    <div  class="mt-4 form-group"  *ngIf="tab === 'bank'">
+                            <h3>Add Bank<span class="float-end"><i (click)="toggleWidget('')"
+                                class="las la-times close-order"></i></span></h3>
+
+                  <div class="notification-box mb-4 d-flex align-items-center  pb-3">
+                    <div class="add-bank1">
+                        <img src="assets/images/pay2.png">
+                        <h5>SBI</h5>
+                    </div>
+        
+                    <div class="add-bank  occasion-reminder">
+                        <img src=" assets/images/pay1.png">
+                        <h5>AXIS</h5>
+                    </div>
+                    <div class="add-bank occasion-reminder">
+                        <img src="assets/images/pay3.png">
+                        <h5>HDFC</h5>
+                    </div>
+                    <div class="add-bank occasion-reminder">
+                        <img src="assets/images/pay4.png">
+                        <h5>ICIC</h5>
+                    </div>
+                    <div class="add-bank occasion-reminder">
+                        <img src="assets/images/pay1.png">
+                        <h5>AXIS</h5>
+                    </div>
+                    <div class="add-bank occasion-reminder">
+                        <img src="assets/images/pay4.png">
+                        <h5>ICIC</h5>
+                    </div>
+                    <div class="add-bank  occasion-reminder">
+                        <img src=" assets/images/pay1.png">
+                        <h5>AXIS</h5>
+                    </div>
+                 </div>
+             <h3>All Banks</h3>
+            <div class="all-bank">
+            <p>Allahabad Bank</p>
+            <p>Andhra Bank</p>
+            <p>Axis Bank</p>
+            <p>HDFC Bank</p>
+            <p>ICIC Bank</p>
+            <p>Allahabad Bank</p>
+            <p>Andhra Bank</p>
+            <p>Axis Bank</p>
+            <p>HDFC Bank</p>
+            <p>ICIC Bank</p>
+            <p>Allahabad Bank</p>
+            <p>Andhra Bank</p>
+            <p>Axis Bank</p>
+            <p>HDFC Bank</p>
+            <p>ICIC Bank</p>
+            <p>Allahabad Bank</p>
+            <p>Andhra Bank</p>
+            <p>Axis Bank</p>
+            <p>HDFC Bank</p>
+            <p>ICIC Bank</p>
+            <p>Allahabad Bank</p>
+            <p>Andhra Bank</p>
+            <p>Axis Bank</p>
+            <p>HDFC Bank</p>
+            <p>ICIC Bank</p>
+            <p>Allahabad Bank</p>
+            <p>Andhra Bank</p>
+            <p>Axis Bank</p>
+            <p>HDFC Bank</p>
+            <p>ICIC Bank</p>
+            <p>Allahabad Bank</p>
+            <p>Andhra Bank</p>
+            <p>Axis Bank</p>
+            <p>HDFC Bank</p>
+            <p>ICIC Bank</p>
+            <p>Allahabad Bank</p>
+            <p>Andhra Bank</p>
+            <p>Axis Bank</p>
+            <p>HDFC Bank</p>
+            <p>ICIC Bank</p>
+            <p>Allahabad Bank</p>
+            <p>Andhra Bank</p>
+            <p>Axis Bank</p>
+            <p>HDFC Bank</p>
+            <p>ICIC Bank</p>
+            
+        </div>  
+
+
+
+
+                    </div>
          
             </div>
         </div>

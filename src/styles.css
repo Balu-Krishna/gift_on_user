@@ -1053,6 +1053,14 @@ mat-label {
     .page-bg::before{
         display: none;
     }
+    .your-upi-id{
+        width: 320px !important;
+             } 
+
+             /* .mat-form-field-infix {
+               margin-left: 150px !important;
+            } */
+        
     .profile-page-bg::after{
         display: none !important;
     }

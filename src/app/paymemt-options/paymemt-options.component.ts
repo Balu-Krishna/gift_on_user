@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-paymemt-options',
@@ -7,25 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymemtOptionsComponent implements OnInit {
 
-    isAddcard: boolean = true ; 
-    isAddbank: boolean= true ;
-    isAddupi: boolean = true;
+   
+    tab: string = ''
 
-  constructor() { }
+  constructor(private notifyService : ToastrService ,private notifyService1 : ToastrService) { }
 
   ngOnInit(): void {
   }
+ toggleWidget(tab: string){
+   this.tab = tab
+ }
+  
 
-  toggleAddcard(){
-this.isAddcard  = ! this.isAddcard;
-
+  addCard(){
+this.notifyService.success("Card Added successfully !!", "",);
   }
-  toggleAddbank(){
-    this.isAddbank = ! this.isAddbank;
-   
-  }
-  toggleAddupi(){
-    this.isAddupi = ! this.isAddupi;
-    this.isAddcard  = ! this.isAddcard;
+  addUpiId(){
+    this.notifyService1.success("Upi Id Added successfully !!", "",);
   }
 }

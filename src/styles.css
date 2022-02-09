@@ -1088,6 +1088,7 @@ mat-label {
       width: 34% !important;
       right: 0 !important;
     }
+ 
 }
 
 @media (min-width: 768px) and (orientation: portrait) {

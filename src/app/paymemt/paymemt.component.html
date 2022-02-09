@@ -1,79 +1,277 @@
-<section class="wishlist"> 
+<section class="wishlist page-bg">
     <div class="container">
-<div class="row">
+        <div class="row">
+            <div class="col-md-8">
+                <h4 class="checkout-heading">Choose Payment Method</h4>
+                <div class="box-shadow-payment">
+                    <h4 class="recipient">Store Address</h4>
+                    <ul class="list-inline d-flex">
+                        <li class="me-3"><img src="assets/images/store-add.svg" /></li>
+                        <li>
+                            <h4 class="store-add-name">Mangatrai Pearls & Jewellers</h4>
+                            <p class="store-add-p">Krish-e @ 36, Plot No-499, Rd Number 36, Near Oakton GTSCI – an NTT
+                                Company,
+                                Jubilee Hills, Hyderabad, Telangana 500033</p>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="box-shadow-payment mt-4" style="padding-left: 0 !important;">
+                    <div>
+                        <mat-tab-group >
+                            <mat-tab>
+                                <div>
+                                    <ng-template mat-tab-label>
+                                        <span class="payment-method">Credit / Debit Cards</span>
+                                        <span class="material-icons">
+                                            chevron_right
+                                        </span>
+                                    </ng-template>
+                                    <div class="payment-method-content">
+                                        <div class="payment-header">Saved Cards </div>
+                                        <div *ngFor="let card of cards; index as i" style="padding-top: 20px;">
+                                            <div class="d-flex" [ngClass]="{'bottom-strip': i !== cards.length-1 }">
+                                                <div class="card-type">
+                                                    <img src="assets/images/mastercard.svg"
+                                                        *ngIf="card.type == 'MASTERCARD'" class="img-fluid" >
+                                                    <img src="assets/images/visa.svg" *ngIf="card.type == 'VISA'"
+                                                        class="img-fluid" style="border: 0.6px solid #00579F; box-sizing: border-box; border-radius: 4px; padding: 6px">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="card-number">
+                                                                    <span>{{card.number}}</span>
+                                                                </div>
+                                                                <div class="name-on-card">
+                                                                    <span>{{card.name}}</span>
+                                                                </div>
+                                                                <div style="padding-bottom: 20px;">
+                                                                    <span class="card-expires">Expires : </span>
+                                                                    <span class="name-on-card">{{card.expires}}</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <img src="assets/images/del-new.svg" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
 
-<div class="col-md-8">
-<h4 class="checkout-heading">Choose Payment Method</h4>
-<div class="check-box-shadow">
-    <h4 class="recipient">Store Address</h4>
-    <ul class="list-inline d-flex">
-<li class="me-3"><img  src="assets/images/store-add.svg" /></li>
-<li><h4 class="store-add-name">Mangatrai Pearls & Jewellers</h4><p class="store-add-p">Krish-e @ 36, Plot No-499, Rd Number 36, Near Oakton GTSCI – an NTT Company,
-    Jubilee Hills, Hyderabad, Telangana 500033</p></li>
-    </ul>
+                                        </div>
+                                    </div>
+                                    <div class="add-new-card" style="padding-top: 20px;">
+                                        <div class="payment-header">Add New Card </div>
+                                        <div class="add-card-info">
+                                            <div class="row m-0 ">
+                                                <mat-form-field class="form-group col-sm-12 p-0" floatLabel="always">
+                                                    <mat-label> Card Number</mat-label>
+                                                    <input matInput #input type="email" placeholder="**** **** ****"
+                                                        required>
+                                                </mat-form-field>
+                                                <mat-form-field class="form-group col-sm-12 col-md-6"
+                                                    style="padding-left: 0;" floatLabel="always">
+                                                    <mat-label> Expiry date</mat-label>
+                                                    <input matInput #input type="email" placeholder="MM/YY" required>
+                                                </mat-form-field>
+                                                <mat-form-field class="form-group col-sm-12 col-md-6"
+                                                    style="padding-right: 0;" floatLabel="always">
+                                                    <mat-label>CVV</mat-label>
+                                                    <input matInput #input type="email" placeholder="Enter CVV"
+                                                        required>
+                                                </mat-form-field>
+                                                <mat-form-field class="form-group col-sm-12 p-0" floatLabel="always">
+                                                    <mat-label>Name on card</mat-label>
+                                                    <input matInput #input type="email"
+                                                        placeholder="Enter name as mentioned on card" required>
+                                                </mat-form-field>
+                                                <div class="col-sm-12 p-0 secure-save">
+                                                    <mat-checkbox class="example-margin mat-check">Securely save this
+                                                        card for a faster checkout next time.</mat-checkbox>
+                                                </div>
+                                            </div>
 
-</div>
-<div class="check-box-shadow">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="mt-4 form-group text-center">
+                                        <button class="btn button btn-block w-50 mx-auto" routerLink="/order-confirmation"> Pay
+                                            &#8377; 29,198</button>
+                                    </div>
+                                </div>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <span class="payment-method">Wallets</span>
+                                    <span class="material-icons">
+                                        chevron_right
+                                    </span>
+                                </ng-template>
+                                <div class="payment-method-content">
+                                    <div class="payment-header">Pay Via Wallets </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <mat-radio-group aria-label="Select an option"
+                                            class="mt-3 form-group payment-wallet-radio-group">
+                                            <mat-radio-button class="radio-option" value="1">
+                                                <img src="assets/images/phone-pe.svg" />
+                                                PhonePe
+                                            </mat-radio-button>
+                                            <mat-radio-button class="radio-option" value="2">
+                                                <img src="assets/images/paytm.svg" class="img-fluid" />
+                                                Paytm
+                                            </mat-radio-button>
+                                            <mat-radio-button class="radio-option" value="3">
+                                                <img src="assets/images/amazonpay.svg" class="img-fluid" />
+                                                Amazon Pay
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="mt-4 form-group text-center">
+                                        <button class="btn button btn-block w-50 mx-auto" routerLink="/order-confirmation"> Pay
+                                            &#8377; 29,198</button>
+                                    </div>
+                                </div>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <span class="payment-method">UPI</span>
+                                    <span class="material-icons">
+                                        chevron_right
+                                    </span>
+                                </ng-template>
+                                <div class="payment-method-content">
+                                    <div class="payment-header">Pay Via UPI ID </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <mat-radio-group aria-label="Select an option"
+                                            class="mt-3 form-group payment-wallet-radio-group">
+                                            <mat-radio-button class="radio-option-upi" value="1">
+                                                <img src="assets/images/upi.svg" />
+                                                saikrishna@axs
+                                            </mat-radio-button>
+                                            <mat-radio-button class="radio-option-upi" value="2">
+                                                <img src="assets/images/upi.svg" />
+                                                saikrishna@yds
+                                            </mat-radio-button>
 
- 
-    <div class="row ">
-                      
-    
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="payment-method-content">
+                                    <div class="payment-header">Add UPI ID</div>
+                                </div>
+                                <div class="row" style="padding-top: 20px;">
+                                    <mat-form-field class="form-group col-sm-12" style="padding-right: 0;"
+                                        floatLabel="always">
+                                        <mat-label>Your UPI ID</mat-label>
+                                        <input matInput #input type="email" placeholder="Enter your UPI ID" required>
+                                    </mat-form-field>
+                                </div>
+                                <div class="row ">
+                                    <div class="mt-4 form-group text-center">
+                                 <button class="btn button btn-block w-50 mx-auto" routerLink="/order-confirmation"> Pay
+                                            &#8377; 29,198</button>
+                                    </div>
+                                </div>
+                            </mat-tab>
+                            <mat-tab>
+                                <ng-template mat-tab-label>
+                                    <span class="payment-method">Net Banking</span>
+                                    <span class="material-icons">
+                                        chevron_right
+                                    </span>
+                                </ng-template>
+                                <div class="payment-method-content">
+                                    <div class="payment-header">Pay Via Net Banking </div>
+                                </div>
+                                <div class="form-group col-sm-12" style="padding-top: 20px;">
+                                    <ul class="donate-now d-flex justify-content-around">
+                                        <li>
+                                            <input type="radio" id="2" name="2" />
+                                            <label class="d-flex flex-column">
+                                                <img class="img-fluid " src="assets/images/sbi.svg" alt="header-image">
+                                                SBI
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="1" name="1" />
+                                            <label class="d-flex flex-column">
+                                                <img class="img-fluid " src="assets/images/hdfc.svg" alt="header-image">
+                                                HDFC
+                                            </label>
 
-<div class="mt-4 form-group">
-  
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="3" name="3" />
+                                            <label class="d-flex flex-column">
+                                                <img class="img-fluid " src="assets/images/icici.svg"
+                                                    alt="header-image">
+                                                ICICI
+                                            </label>
 
-       <!-- Container for sidebar(s) + page content -->
-    <ng-sidebar-container>
-   <!-- Page content -->
-   <!-- <div ng-sidebar-content>
-    <button (click)="_toggleSidebar()">Toggle sidebar</button>
-  </div> -->
-        <!-- A sidebar -->
-        <ng-sidebar [(opened)]="_opened">
-          <p>Sidebar contents</p>
-        </ng-sidebar>
-<div class="profile-nav-box position-relative" ng-sidebar-content>
-<ul class="profile-menu-nav">
-        <li><a (click)="_toggleSidebar()">Credit/Debit Cards</a></li>
-        <li><a (click)="_toggleSidebar()" >Wallets</a></li>
-        <li><a (click)="_toggleSidebar()" >UPI</a></li>
-        <li><a (click)="_toggleSidebar()">Net Banking</a></li>
-        
-    </ul>
-</div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="4" name="4" />
+                                            <label class="d-flex flex-column">
+                                                <img class="img-fluid " src="assets/images/axis.svg" alt="header-image">
+                                                AXIS
+                                            </label>
 
-   
-      </ng-sidebar-container>
-
-
-     
-
-
-<button class="btn button btn-block w-50 mx-auto"  routerLink="/order-confirmation" > Pay &#8377; 29,198</button>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-    <div class="side-box-cart">
-        <h3 class="side-heading mt-2 mb-4">   Order Summary</h3>
-        <p>Sub total <span> &#8377; 29,198</span></p>
-        <p>Gift packing
-            <span> Free</span></p>
-        <p>Offer Discount <span> &#8377; 569</span></p>
-        <p class="pay">Payable Amount <span > &#8377; 29,198</span></p>
-        <ul class="list-inline d-flex">
-            <li><img src="assets/images/mark-cart.svg" /></li>
-<li class="ms-2"><small class="cart-small">Lorem ipsum, or lipsum as it is sometimes
-    known print.</small></li>
-        </ul>
-        <div class="mt-3 text-center">
-    </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <span class="more-banks">
+                                        More Banks
+                                    </span>
+                                  
+                                </div>
+                                <div class="row ">
+                                    <div class="mt-4 form-group text-center">
+                                        <button class="btn button btn-block w-50 mx-auto" routerLink="/order-confirmation"> Pay
+                                            &#8377; 29,198</button>
+                                    </div>
+                                </div>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                    <!-- <div class="row ">
+                        <div class="mt-4 form-group text-center">
+                            <button class="btn button btn-block w-50 mx-auto" routerLink="/order-confirmation"> Pay
+                                &#8377; 29,198</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="side-box-cart">
+                    <h3 class="side-heading mt-2 mb-4"> Order Summary</h3>
+                    <p>Sub total <span> &#8377; 29,198</span></p>
+                    <p>Gift packing
+                        <span> Free</span>
+                    </p>
+                    <p>Offer Discount <span> &#8377; 569</span></p>
+                    <p class="pay">Payable Amount <span> &#8377; 29,198</span></p>
+                    <ul class="list-inline d-flex">
+                        <li><img src="assets/images/mark-cart.svg" /></li>
+                        <li class="ms-2"><small class="cart-small">Lorem ipsum, or lipsum as it is sometimes
+                                known print.</small></li>
+                    </ul>
+                    <div class="mt-3 text-center">
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
     </div>
-</div>
 
 </section>

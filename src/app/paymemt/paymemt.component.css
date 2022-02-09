@@ -1,231 +1,296 @@
-.side-box-cart{
-    padding: 1rem;
-    background-color: #F9FBFE;
-    margin-bottom: 1rem;
-    border-radius:12px;
-    position: relative;
-    }
-    .wishlist{
-        background-image: url(/assets/images/banner-bg.svg);
-        padding: 2rem;
-        background-size: auto;
-        background-position: top center;
-        background-repeat: no-repeat;
-    }
-    mat-label {
-     
-        text-transform: uppercase;
-    }
-    .btn-block:hover{
-      background: #000;
-    }
-    .underline{
-        height:5px;
-        border-bottom: 1px dashed #D1D1D3
-    }
-    .donate-now {
-        list-style-type: none;
-     
-        padding: 0;
-      }
-      
-      .donate-now li {
-        float: left;
-        width: 40%;
-        height: 40px;
-        position: relative;
-      }
-      
- .btn-block
- {
-    background: linear-gradient(90.84deg, #A38A55 0%, #91793F 106.23%);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    color:#fff;
-    font-size:16px;
-    font-weight: 600;
- }
-      .donate-now label,
-      .donate-now input {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      }
-      
-      .donate-now input[type="radio"] {
-        opacity: 0.01;
-        z-index: 100;
-      }
-      
-      .donate-now input[type="radio"]:checked+label,
-      .Checked+label {
-       opacity: 1;
-       font-weight: 600;
-       color: var(--main);
-      }
-      
-      .donate-now label {
-        font-family: 'Open Sans', sans-serif;
-        cursor: pointer;
-        z-index: 90;
-      }
-      .donate-now label img{
-        height: 28px;
-        padding-right: 0.5rem;
-        filter: grayscale(100%);
-      }
-      .donate-now input[type="radio"]:checked+label img,
-      .Checked+label {
-        filter: grayscale(0%);
-      }
-      .donate-now label:hover {
-       opacity: 1;
-      }
-    .side-box-cart p{
-    font-size: 0.825rem;
-    }
-    .side-heading{
-        font-size: 1rem;
-        line-height: 24px;
-        font-weight: 600;
-    }
-    .side-box-cart p.pay{
-        padding-top: 1rem;
-        border-top: 0.6px solid #B3B4B9;
-        color: #000;
-        font-weight: 600;
-    }
-    .side-box-cart p.pay span{
-    color: #B76E79;
-    
-    }
-    .cart-small{
-        font-size: 0.75rem;
-        margin-bottom: 0;
-    }
-    .side-box-cart p span{
-        float: right;
-        font-weight: 500;
-    }
-
-
-    .profile-nav-box{
-      background: #FAFAFA;
-  
-      border-radius:1rem;
-      position: static !important;
-      box-shadow: 0px 0px 8px 0px #0000000F;
-  }
-  .profile-pic{
-      display: block;
-      margin: 1rem auto;
-  }
-  .profile-menu-nav{
-      list-style: none;
-      padding-inline-start: 0px;
-      position: static !important;
-  }
-  .ng-sidebar__content[_ngcontent-ree-c11]{
-    position: static !important;
-  }
-  .ng-sidebar__content.ng-sidebar__content--animate {
-    position: static !important;
-  }
-  
-
-  .profile-box-image{
-      padding: 2rem;
-  }
-  .edit-profile{
-      font-size: 0.825rem;
-      text-align: center;
-      display: block;
-      font-weight: 600;
-      color: var(--main);
-      margin-top: 0.5rem;
-      text-decoration: none;
-  }
-  .edit-profile img{
-      height: 13px;
-      position: relative;
-      top: -2px;
-      margin-left: 0.25rem;
-  }
-  .profile-menu-nav a{
-      color: #505565;
-      display: block;
-      padding:0.75rem 1rem 0.5rem 3rem;
-      text-decoration: none;
-      font-weight: 500;
-      /* position: relative; */
-  }
-  .profile-menu-nav a.active,.profile-menu-nav a:hover{
-  background: #FAEDDD;
-  color: #8A6E4B;
-  font-weight: 600;
-  text-decoration: none;
-  }
-  .profile-menu-nav a.active::after{
-  content: '';
-  /* position: absolute; */
-  top: 0;
-  left:0;
-  width: 4px;
-  height: 100%;
-  background: #8A6E4B;
-  }
-  /* .ng-sidebar__content.ng-sidebar__content--animate {
-    position:relative !important;
-    overflow: auto;
+:host {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
-.ng-sidebar__content[_ngcontent-llo-c11]{
-  position: relative;
-} */
-/* .ng-sidebar-content{
-  position: static!important;
 
-} */
-  .profile-menu-nav a.active::before{
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 10px;
-      width: 100%;
-      height: 100%;
-      background-image: url(/assets/images/arrow.svg);
-      background-repeat: no-repeat;
-      background-position: center right;
-      }
-  @media (min-width: 768px) and (orientation:portrait) {
-    
-      .profile-menu-nav a{
-          font-size: 0.9rem;
-          padding-left: 1rem !important;
-      }
-      .profile-box-image{
-          padding: 0.75rem;
-      }
-  }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
-      .profile-box-image{
-          padding: 0.5rem;
-      }
-      .profile-nav-box{
-          margin-bottom: 1rem;
-          height: auto !important;
-      }
-      .profile-menu-nav{
-          list-style: none;
-          padding-inline-start: 0px;
-          white-space: nowrap;
-          /* display: flex; */
-          overflow: auto;
-      }
-  }
-  @media only screen and (max-width: 320px) {
-  
-  }
-  
+:host ::ng-deep .mat-tab-labels {
+  flex-direction: column;
+}
+
+mat-tab-group {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+:host ::ng-deep .mat-tab-body-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+mat-tab-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+:host ::ng-deep mat-ink-bar {
+  display: none;
+}
+
+/* Styles for the active tab label */
+:host ::ng-deep.mat-tab-label.mat-tab-label-active {
+  background-color: transparent !important;
+  color: #8a6e4b !important;
+  font-family: "Open Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  border-left: 2px solid #8a6e4b !important;
+  width: 300px !important;
+}
+/* Styles for the active tab label */
+:host ::ng-deep.mat-tab-label:not(.mat-tab-label-active) {
+  font-family: "Montserrat" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #505565 !important;
+  width: 300px !important;
+}
+:host ::ng-deep.mat-tab-label .payment-method {
+  padding-right: 30px !important;
+}
+:host
+  ::ng-deep.mat-tab-label:not(.mat-tab-label-active)
+  .mat-tab-label-content
+  .material-icons {
+  display: none;
+}
+:host ::ng-deep.material-icons {
+  padding-left: 26px !important;
+}
+
+:host ::ng-deep.mat-tab-list {
+  border: none;
+}
+
+.payment-method-content {
+  padding-top: 10px;
+}
+.payment-header {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.1875px;
+}
+.bottom-strip {
+  border-bottom: 0.6px solid #b3b4b9;
+}
+.card-type {
+  padding-right: 20px;
+}
+.card-number {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.1875px;
+}
+.name-on-card {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.1875px;
+  color: #505565;
+}
+.card-expires {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.1875px;
+  color: #505565;
+}
+.add-card-info {
+  padding-top: 20px;
+}
+:host ::ng-deep.mat-checkbox-label {
+  font-family: "Montserrat" !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 24px !important;
+  text-align: center !important;
+  letter-spacing: -0.1875px !important;
+  color: #505565 !important;
+}
+:host ::ng-deep.mat-tab-body-content {
+  overflow: hidden;
+}
+.payment-wallet-radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.radio-option {
+  margin: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #505565;
+}
+.radio-option-upi {
+  margin: 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.1875px;
+  color: #000000;
+}
+
+.side-box-cart {
+  padding: 1rem;
+  background-color: #f9fbfe;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  position: relative;
+}
+.wishlist {
+  /* background-image: url(/assets/images/banner-bg.svg); */
+  padding: 2rem;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+mat-label {
+  text-transform: uppercase;
+}
+.btn-block:hover {
+  background: #000;
+}
+.underline {
+  height: 5px;
+  border-bottom: 1px dashed #d1d1d3;
+}
+.donate-now {
+  list-style-type: none;
+
+  padding: 0;
+}
+
+.donate-now li {
+  float: left;
+  width: auto;
+  height: 40px;
+  position: relative;
+  padding-right: 30px;
+}
+
+.btn-block {
+  background: linear-gradient(90.84deg, #a38a55 0%, #91793f 106.23%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.donate-now label,
+.donate-now input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.donate-now input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.donate-now input[type="radio"]:checked + label,
+.Checked + label {
+  opacity: 1;
+  font-weight: 600;
+  color: var(--main);
+}
+
+.donate-now label {
+  cursor: pointer;
+  z-index: 90;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #505565;
+}
+.donate-now label img {
+  height: 28px;
+  width: 28px;
+  padding-right: 0.5rem;
+  padding-bottom: 10px;
+}
+.more-banks {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.1875px;
+  color: #8a6e4b;
+  padding-top: 30px;
+}
+.donate-now label:hover {
+  opacity: 1;
+}
+.side-box-cart p {
+  font-size: 0.825rem;
+}
+.side-heading {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 600;
+}
+.side-box-cart p.pay {
+  padding-top: 1rem;
+  border-top: 0.6px solid #b3b4b9;
+  color: #000;
+  font-weight: 600;
+}
+.side-box-cart p.pay span {
+  color: #b76e79;
+}
+.cart-small {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+.side-box-cart p span {
+  float: right;
+  font-weight: 500;
+}
+.box-shadow-payment {
+  background: #ffffff;
+  border: 1px solid #f0f1f3;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 20px 30px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+
+  .mat-tab-group {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}
+}

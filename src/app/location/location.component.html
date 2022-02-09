@@ -7,18 +7,36 @@
             </div>
             <div class="col-md-3">
                 <mat-form-field class="form-group w-100" floatLabel="always">
+
                     <mat-label> COUNTRY <span style="color: red;"> *</span></mat-label>
                     <mat-select class="" placeholder="Select Country">
-                        <mat-option value="one">Country 1</mat-option>
-                        <mat-option value="two">Country 2</mat-option>
+                        <mat-option value="one"  *ngFor="let data of locationData">{{data.name}}</mat-option>
+                        <!-- <mat-option value="two">Country 2</mat-option> -->
                     </mat-select>
                 </mat-form-field>
             </div>
             <div class="col-md-4">
+
+                <form class="example-form">
+                
                 <mat-form-field class="form-group w-100" floatLabel="always">
+                    
                     <mat-label> Search By City or pincode<span style="color: red;"> *</span></mat-label>
-                    <input matInput #input type="email" placeholder="Enter City or Locality">
+                  
+                    <input type="text"
+                    placeholder="Enter City or Locality"
+                    aria-label="Number"
+                    matInput
+                    [formControl]="myControl"
+                    [matAutocomplete]="auto">
+
+                    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                        <mat-option   *ngFor="let city of CityData " [value]="city.name">{{city.name}}</mat-option>
+                        <!-- <mat-option value="two">Country 2</mat-option> -->
+                    </mat-autocomplete>
+
                 </mat-form-field>
+            </form>
             </div>
             <div class="col-md-1">
                 <div class="location_search_icon">
@@ -31,10 +49,10 @@
                 <h4 class="popular">Popular Cities</h4>
             </div>
 
-            <div class="col-md-3 col-6 col-sm-6">
-                <div class="icon-location-box">
-                    <img class="img-fluid " src="assets/images/Hyderabad.svg" alt="location-image">
-                    <h4>Hyderabad</h4>
+            <div class="col-md-3 col-6 col-sm-6"  *ngFor="let city of CityData ">
+                <div class="icon-location-box" >
+                    <img class="img-fluid " [src]="city.dealImage" alt="location-image">
+                    <h4>{{city.name}}</h4>
                 </div>
             </div>
             <div class="col-md-3 col-6 col-sm-6">

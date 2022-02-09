@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { offersInterface } from '../_models/offers';
+import { OffersService } from '../_services/offers.service';
 
 
 @Component({
@@ -8,6 +10,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./offers.component.css']
 })
 export class OffersComponent implements OnInit {
+
   dynamicSlides = [
     {
       id: 1,
@@ -39,11 +42,28 @@ export class OffersComponent implements OnInit {
       alt:'Side 5',
       title:'Side 5'
     }
-  ]
-  constructor() { }
+  ];
+  
+ offerData: offersInterface[]= [];
+
+//  public offerData = [];
+  
+
+   
+
+constructor( private _offerService:OffersService ) { }
 
   ngOnInit(): void {
+  
+      this._offerService.getOffers()
+      .subscribe((data:offersInterface) => {
+      
+        this.offerData = data.data
+        console.log(this.offerData)
+      
+      });
   }
+ 
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -68,4 +88,8 @@ export class OffersComponent implements OnInit {
     },
     nav: true
   };
+
+
+
 }
+

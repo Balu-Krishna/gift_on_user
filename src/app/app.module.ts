@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatIconModule} from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
 import { MaterialModule } from 'src/material.module';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
@@ -49,6 +49,17 @@ import { AccessoriesComponent } from './accessories/accessories.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReceivedMessageComponent } from './help/received-message/received-message.component';
 import { SentMessageComponent } from './help/sent-message/sent-message.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from './_services/auth.service';
+
+function appInitializer(authService: AuthService) {
+  return () => {
+    return new Promise((resolve) => {
+      authService.getDataByToken().subscribe().add(resolve);
+    });
+  };
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -104,9 +115,18 @@ import { SentMessageComponent } from './help/sent-message/sent-message.component
     ToastrModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
 
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [
+
+    {
+      provide: APP_INITIALIZER,
+      useFactory: appInitializer,
+      multi: true,
+      deps: [AuthService],
+    },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

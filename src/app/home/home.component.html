@@ -55,7 +55,23 @@
       <div class="col-md-12">
         <h3 class="sub-heading-h3">Top Rated Vendors <a class="view-all float-end">View ALL</a></h3>
       </div>
-      <div class="col-md-6 col-lg-4 col-xl-3 " *ngFor="let item of stores">
+      <div class="col-md-6 col-lg-4 col-xl-3 " *ngFor="let toprated of homeService.toprated$ | async">
+        <div class="store-box">
+          <div class="store-image">
+            <img src="{{ SITE_URL + toprated.storeLogo}}" class="img-fluid store-image-grid" alt="store-image" />
+          </div>
+          <div class="store-content">
+            <h3>{{toprated.storeName}}</h3>
+            <div class="store-details"><img src="assets/images/location.svg" /><span
+                class="ps-2">{{toprated.address}}</span></div>
+            <div class="store-details"><img src="assets/images/user.png" /><span class="ps-2">{{toprated.total_customers}}</span></div>
+            <p class="mb-0 mt-2"><a class="view-all">View All <img src="assets/images/right.svg"
+                  class="right-arrow" /></a> <span class="rating float-end"><i class="las la-star"></i>
+                {{toprated.rating}}</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-md-6 col-lg-4 col-xl-3 " *ngFor="let item of stores">
         <div class="store-box">
           <div class="store-image">
             <img src="{{item.img}}" class="img-fluid store-image-grid" alt="store-image" />
@@ -70,7 +86,7 @@
                 {{item.rating}}</span></p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>

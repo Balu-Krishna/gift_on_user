@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { ToastrService } from 'ngx-toastr';
+import { environment } from 'src/environments/environment';
+import { CommonService } from '../_services/common.service';
+import { HomeService } from '../_services/home.service';
 declare var jQuery: any;
 @Component({
   selector: 'app-home',
@@ -10,6 +13,8 @@ declare var jQuery: any;
 export class HomeComponent implements OnInit {
   data: any;
 
+  SITE_URL = `${environment.siteUrl}`;
+  
   dynamicSlides = [
     {
       id: 1,
@@ -167,7 +172,10 @@ export class HomeComponent implements OnInit {
       cust: '500+ bought this',
     },
   ];
-  constructor(private notifyService: ToastrService) {}
+  constructor(
+    private notifyService: ToastrService,
+    public homeService: HomeService,
+  ) { }
   testOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -285,5 +293,11 @@ export class HomeComponent implements OnInit {
   beforeChange(e: any) {
     console.log('beforeChange');
   }
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.homeService.getTopRated()
+   }
+
+   getTopRated(){
+
+   }
 }

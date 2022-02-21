@@ -61,17 +61,16 @@
                                         src="assets/images/cartheader.svg" alt="header-image"> </a>
                             </li>
 
-                            <li class="nav-item login_register"
-                                [ngClass]="(router.url != '/')?'display_none':'display_block'">
+                            <li *ngIf="!userDetails" class="nav-item login_register">
                                 <a class="nav-icon" routerLink="/login"
                                     [ngClass]="{'active' : router.url == '/login'}">Login/Register</a>
                             </li>
-                            <li class="nav-item dropdown user_informative"
-                                [ngClass]="(router.url == '/')?'display_none':'display_block'">
+                            <li *ngIf="userDetails" class="nav-item dropdown user_informative pointer">
                                 <a id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
                                     class="nav-icon nav-loc-span d-flex align-items-center">
-                                    <img class="img-fluid " src="assets/images/user-header.svg" alt="header-image">
-                                    <span>Supraj</span>
+                                    <img class="img-fluid header-image" src="{{ SITE_URL + userDetails.profileImage }}"
+                                        alt="header-image">
+                                    <span>{{ userDetails.fullName }}</span>
                                 </a>
                                 <ul class="dropdown-menu vendordrop user_profile_info"
                                     aria-labelledby="dropdownMenuButton1">
@@ -81,9 +80,9 @@
                                     <li><a class="dropdown-item" routerLink="/redeem">Redeem (Gions)</a></li>
                                     <li><a class="dropdown-item" routerLink="/notification">Notifications </a></li>
                                     <li><a class="dropdown-item" routerLink="/My-reminders"> Reminders</a></li>
-                                    <li><a class="dropdown-item" routerLink="/paymemtoptions">Payment Options</a></li>
+                                    <li><a class="dropdown-item" routerLink="/payment">Payment Options</a></li>
                                     <li><a class="dropdown-item" routerLink="/help">Help</a></li>
-                                    <li><a class="dropdown-item" routerLink="/">Logout</a></li>
+                                    <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -106,9 +105,57 @@
 
                 <ul class="navbar-nav w-100">
                     <li class="nav-item">
-                        <a class="nav-link mobile_hide" routerLink="/" [ngClass]="{'active' : router.url == '/'}">Home</a>
+                        <a class="nav-link mobile_hide" routerLink="/"
+                            [ngClass]="{'active' : router.url == '/'}">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" *ngFor="let category of category$ | async">
+                        <a class="nav-link"
+                            [ngClass]="(router.url == '/category-stores' || router.url == '/store-products' || router.url == '/products-details')?'active': ''"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ category.category }}
+                        </a>
+                        <div *ngIf="category.category == 'Accessories'" class="dropdown-menu vendordrop p-0 gender-drop" aria-labelledby="dropdownMenuButton1">
+                            <ul class=" d-flex cat-gender-dropdown  drop_cat">
+                                
+                                <li class="col" *ngFor="let subcategory of category.subcategory[0]">
+                                    <a class="dropdown-item text-center mobile_hide" routerLink="/category-stores">
+                                        <img class="img-fluid " src="assets/images/women-ic.svg" alt="header-image">
+                                        <p>{{ subcategory.subcategoryname }}</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div *ngIf="category.category != 'Accessories'" class="dropdown-menu vendordrop p-0 gender-drop" aria-labelledby="dropdownMenuButton1">
+                            <ul class=" d-flex cat-gender-dropdown  drop_cat">
+
+                                <li class="col">
+                                    <a class="dropdown-item text-center mobile_hide" routerLink="/category-stores">
+                                        <img class="img-fluid " src="assets/images/women-ic.svg" alt="header-image">
+                                        <p>Women</p>
+                                    </a>
+                                </li>
+                                <li class="col">
+                                    <a class="dropdown-item text-center mobile_hide" routerLink="/category-stores">
+                                        <img class="img-fluid " src="assets/images/men-ic.svg" alt="header-image">
+                                        <p>Men</p>
+                                    </a>
+                                </li>
+                                <li class="col">
+                                    <a class="dropdown-item text-center mobile_hide" routerLink="/category-stores">
+                                        <img class="img-fluid " src="assets/images/kids-ic.svg" alt="header-image">
+                                        <p>Kids</p>
+                                    </a>
+                                </li>
+                                <li class="col">
+                                    <a class="dropdown-item text-center" routerLink="/category-stores">
+                                        <img class="img-fluid " src="assets/images/all-ic.svg" alt="header-image">
+                                        <p>All Recipients</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link"
                             [ngClass]="(router.url == '/category-stores' || router.url == '/store-products' || router.url == '/products-details')?'active': ''"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -118,12 +165,9 @@
                             <ul class=" d-flex cat-gender-dropdown  drop_cat">
 
                                 <li class="col">
-                                    <a class="dropdown-item text-center mobile_hide" routerLink="/category-stores" >
+                                    <a class="dropdown-item text-center mobile_hide" routerLink="/category-stores">
                                         <img class="img-fluid " src="assets/images/women-ic.svg" alt="header-image">
-                                   
                                         <p>Women</p>
-                                   
-                                       
                                     </a>
                                 </li>
                                 <li class="col">
@@ -194,7 +238,8 @@
                             <li><a class="dropdown-item mobile_hide" routerLink="/gadgets-store">Brands</a></li>
                             <li><a class="dropdown-item mobile_hide" routerLink="/gadgets-store">Tablets</a></li>
                             <li><a class="dropdown-item mobile_hide" routerLink="/gadgets-store">Audio System</a></li>
-                            <li><a class="dropdown-item mobile_hide" routerLink="/gadgets-store">Wireless Headsets</a></li>
+                            <li><a class="dropdown-item mobile_hide" routerLink="/gadgets-store">Wireless Headsets</a>
+                            </li>
                             <li><a class="dropdown-item mobile_hide" routerLink="/gadgets-store">AirPods </a></li>
                         </ul>
                     </li>
@@ -233,7 +278,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </li>
+                    </li> -->
                     <li class="nav-item mobile_hide">
                         <a class="nav-link" routerLink="/offers"
                             [ngClass]="{'active' : router.url == '/offers'}">Offers</a>

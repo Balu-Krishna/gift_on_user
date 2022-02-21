@@ -51,10 +51,12 @@
 
             <div class="col-md-3 col-6 col-sm-6"  *ngFor="let city of CityData ">
                 <div class="icon-location-box" >
-                    <img class="img-fluid " [src]="city.dealImage" alt="location-image">
+                    <img class="img-fluid " [src]="'http://34.233.43.193:5800/'+ city.image" alt="location-image">
                     <h4>{{city.name}}</h4>
                 </div>
             </div>
+
+<!-- 
             <div class="col-md-3 col-6 col-sm-6">
                 <div class="icon-location-box">
                     <img class="img-fluid " src="assets/images/Bengaluru.svg" alt="location-image">
@@ -98,7 +100,7 @@
                     <img class="img-fluid " src="assets/images/Ahmedabad.svg" alt="location-image">
                     <h4>Ahmedabad</h4>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
